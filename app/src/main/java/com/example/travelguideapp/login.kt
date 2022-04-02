@@ -3,8 +3,6 @@ package com.example.travelguideapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
@@ -16,7 +14,7 @@ class login : AppCompatActivity() {
     private lateinit var emailid: TextInputEditText
     private lateinit var password: TextInputEditText
     private lateinit var login1: CardView
-    private lateinit var signup: TextView
+    private lateinit var register: TextView
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,17 +24,17 @@ class login : AppCompatActivity() {
         emailid = findViewById(R.id.emailid)
         password = findViewById(R.id.password)
         login1 = findViewById(R.id.login1)
-        signup = findViewById(R.id.signup)
+        register = findViewById(R.id.signup)
         auth = FirebaseAuth.getInstance()
 
         login1.setOnClickListener {
             val userinput = emailid.text.toString()
             val passinput = password.text.toString()
-
             checkcredential(userinput, passinput)
         }
-        signup.setOnClickListener {
-            val intent = Intent(this, com.example.travelguideapp.signup::class.java)
+
+        register.setOnClickListener {
+            var intent = Intent(this, signup_activity::class.java)
             startActivity(intent)
         }
 
@@ -45,7 +43,6 @@ class login : AppCompatActivity() {
             val intent = Intent(this, forgotpass::class.java)
             startActivity(intent)
         }
-
     }
 
     private fun checkcredential(userinput: String, passinput: String) {
