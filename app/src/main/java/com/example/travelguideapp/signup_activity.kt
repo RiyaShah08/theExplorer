@@ -3,7 +3,6 @@ package com.example.travelguideapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
@@ -16,7 +15,7 @@ class signup_activity : AppCompatActivity() {
     private lateinit var username: TextInputEditText
     private lateinit var password: TextInputEditText
     private lateinit var Signup_button: CardView
-    private lateinit var signin: CardView
+    private lateinit var signin1: TextView
     private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +33,6 @@ class signup_activity : AppCompatActivity() {
             registerUserInFirebase(inputEmail, inputPassword)
         }
 
-        var signin1 = findViewById(R.id.signin1) as TextView
         signin1.setOnClickListener {
             val intent = Intent(this, login::class.java)
             startActivity(intent)
