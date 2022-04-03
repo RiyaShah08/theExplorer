@@ -3,13 +3,11 @@ package com.example.travelguideapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.auth.User
 
 class signup_activity : AppCompatActivity() {
     private lateinit var username: TextInputEditText
