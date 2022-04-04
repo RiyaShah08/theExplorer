@@ -3,11 +3,13 @@ package com.example.travelguideapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
+import java.util.regex.Pattern
 
 class signup_activity : AppCompatActivity() {
     private lateinit var username: TextInputEditText
@@ -29,9 +31,30 @@ class signup_activity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         Signup_button.setOnClickListener {
-            val inputEmail = username.text.toString()
+            val username = username.text.toString()
+            val inputEmail = email_id.text.toString()
             val inputPassword = password.text.toString()
-            registerUserInFirebase(inputEmail, inputPassword)
+            if(inputPassword.length == 0 || inputEmail.length == 0 || username.length == 0){
+                Toast.makeText(this@signup_activity, "Required Field must be not empty", Toast.LENGTH_LONG)
+                    .show()
+            }
+            else if(username.length <= 1){
+                Toast.makeText(this@signup_activity, "Username must be greater than 2 character", Toast.LENGTH_LONG)
+                    .show()
+            }
+            else if(android.util.Patterns.EMAIL_ADDRESS.matcher(inputEmail).matches() == false){
+                Toast.makeText(this@signup_activity, "Wrong email address", Toast.LENGTH_LONG)
+                    .show()
+            }
+            else if(inputPassword.length <= 5){
+                Toast.makeText(this@signup_activity, "password length must be greater than 6", Toast.LENGTH_LONG)
+                    .show()
+            }
+
+            else{
+                registerUserInFirebase(inputEmail, inputPassword)
+            }
+
         }
 
         signin1.setOnClickListener {
@@ -42,13 +65,11 @@ class signup_activity : AppCompatActivity() {
 
     private fun registerUserInFirebase(inputEmail: String, inputPassword: String) {
         auth.createUserWithEmailAndPassword(inputEmail, inputPassword).addOnCompleteListener {
-            if (it.isSuccessful) {
 
-                val UserName = username.text.toString()
-                //appDatainFirestore(it.result?.user?.uid ,inputEmail, inputPassword)
+            if (it.isSuccessful) {
                 Toast.makeText(this@signup_activity, "Register Successfully", Toast.LENGTH_LONG)
                     .show()
-                val intent = Intent(this, Home::class.java)
+                val intent = Intent(this, login::class.java)
                 startActivity(intent)
             } else {
                 Toast.makeText(
@@ -57,3 +78,4 @@ class signup_activity : AppCompatActivity() {
         }
     }
 }
+
