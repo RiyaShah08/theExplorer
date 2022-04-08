@@ -18,13 +18,15 @@
         <entry key="..\:/Basicandroid/app/src/main/res/layout/activity_map.xml" value="0.25" />
         <entry key="..\:/Basicandroid/app/src/main/res/layout/activity_signup.xml" value="0.23958333333333334" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/drawable/burger.xml" value="0.26614583333333336" />
+        <entry key="..\:/sem6/theExplorer/app/src/main/res/drawable/button_google.xml" value="0.26614583333333336" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/drawable/profile.xml" value="0.26614583333333336" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_bluespot_desc2.xml" value="0.23596014492753623" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_home.xml" value="0.12158054711246201" />
-        <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_login.xml" value="0.12158054711246201" />
+        <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_login_screen.xml" value="0.1609375" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_main.xml" value="0.23596014492753623" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_signup.xml" value="0.23596014492753623" />
+        <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/button_google.xml" value="0.23731884057971014" />
       </map>
     </option>
   </component>

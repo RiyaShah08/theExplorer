@@ -243,12 +243,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        #login with google
+    #login with google
 
     <com.google.android.gms.common.SignInButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/googlesignin"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:background="@drawable/button_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 

@@ -27,7 +27,7 @@ class login : AppCompatActivity() {
         var password = findViewById<TextInputEditText>(R.id.password)
         var login1 = findViewById<CardView>(R.id.login1)
         var register = findViewById<TextView>(R.id.signup)
-
+        auth = FirebaseAuth.getInstance()
 
         login1.setOnClickListener {
             val userinput = emailid.text.toString()
@@ -53,7 +53,7 @@ class login : AppCompatActivity() {
             auth.signInWithEmailAndPassword(userinput, passinput).addOnCompleteListener {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Logged in", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, bluespot_main::class.java))
+                    startActivity(Intent(this, Home::class.java))
                     finish()
                 } else {
                     Toast.makeText(this, "Wrong credentials", Toast.LENGTH_SHORT).show()
