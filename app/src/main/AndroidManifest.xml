@@ -10,10 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travelguideapp">
         <activity
-            android:name=".login_screen"
-            android:exported="false" />
-        <activity
             android:name=".map_activity"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".Home"
