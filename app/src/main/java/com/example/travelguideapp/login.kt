@@ -18,6 +18,8 @@ import com.google.firebase.auth.GoogleAuthProvider
 class login : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private val RC_SIGN_IN = 89
+    private lateinit var googleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,7 +48,15 @@ class login : AppCompatActivity() {
             val intent = Intent(this, forgotpass::class.java)
             startActivity(intent)
         }
+
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id_auth))
+            .requestEmail().build()
+
+        googleSignInClient = GoogleSignIn.getClient(this, gso)
     }
+
+
 
     private fun checkcredential(userinput: String, passinput: String) {
         if (userinput.isNotEmpty() && passinput.isNotEmpty()) {
@@ -60,6 +70,11 @@ class login : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    fun loginwithgoogle(view: android.view.View) {
+        val signInIntent = googleSignInClient.signInIntent
+        startActivityForResult(signInIntent, RC_SIGN_IN)
     }
 }
 

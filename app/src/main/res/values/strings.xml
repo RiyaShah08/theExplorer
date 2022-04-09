@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">travelguideapp</string>
+    <string name="default_web_client_id_auth">377482358866-q7r5jd901ls6tk5mqovcsd8ld36r4f7u.apps.googleusercontent.com</string>
 </resources>

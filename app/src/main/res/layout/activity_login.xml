@@ -215,10 +215,12 @@
             android:layout_height="53dp"
             android:layout_marginTop="484dp"
             android:layout_marginStart="28dp"
+            android:onClick="login1"
             app:cardBackgroundColor="@color/txtcolor"
             app:cardCornerRadius="15dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="OnClick">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -244,19 +246,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     #login with google
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/googlesignin"
-        android:layout_width="305dp"
-        android:layout_height="53dp"
-        android:background="@drawable/button_google"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-
-     <!--   <com.google.android.material.card.MaterialCardView
+     <com.google.android.material.card.MaterialCardView
             android:id="@+id/loginwithgoogle"
+            android:onClick="loginwithgoogle"
             android:layout_width="305dp"
             android:layout_height="53dp"
             android:layout_marginTop="585dp"
@@ -269,7 +261,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageButton
-                android:id="@+id/login_google"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_marginTop="12dp"
@@ -292,6 +283,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
-        </com.google.android.material.card.MaterialCardView>-->
+        </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
