@@ -21,6 +21,7 @@
             android:layout_height="783dp">
 
             #burger
+
             <ImageView
                 android:layout_width="19.35dp"
                 android:layout_height="12.62dp"
@@ -31,6 +32,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             #profile
+
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
@@ -106,6 +108,7 @@
             #world
 
             <TextView
+                android:id="@+id/textView37"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -120,16 +123,16 @@
             #first layer
 
             <HorizontalScrollView
-                android:layout_width="303.64dp"
-                android:layout_height="249.81dp"
+                android:layout_width="307dp"
+                android:layout_height="178dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="617dp"
+                android:layout_marginTop="18dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/textView37">
 
                 <LinearLayout
-                    android:layout_width="288dp"
+                    android:layout_width="242dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="1dp"
@@ -140,292 +143,308 @@
 
                     #image1
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h1"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <ImageView
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Goa"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Goa"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView40" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Tambdi Surla"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                        <TextView
+                            android:id="@+id/textView40"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Tambdi Surla"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                    #image2-->
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                    #image2
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h2"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Goa"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <ImageView
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Unexplorer Beach"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Goa"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/textView46" />
 
-                    <!--                    #image3-->
+                        <TextView
+                            android:id="@+id/textView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Unexplorer Beach"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h3"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                    #image3
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Peru"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Machu Picchu, Inca"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                    #image4-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Peru"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Machu Picchu, Inca"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h4"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Peru"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                    #image4
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Baga Sea"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <!--                    #image5-->
+                        <ImageView
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Goa"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView48" />
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h5"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Baga Sea"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Mana"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Last village"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                    #image5
 
-                    <!--                    #image6-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                        <ImageView
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h6"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Mana"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView49" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Northmost Village"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <TextView
+                            android:id="@+id/textView49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Last village"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Turtuk"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    <!--                    #image7-->
+                    #image6
 
-                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
-                    <!--                        android:layout_width="match_parent"-->
-                    <!--                        android:layout_height="match_parent"-->
-                    <!--                        android:layout_marginEnd="19dp"-->
-                    <!--                        app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                        app:layout_constraintTop_toTopOf="parent">-->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
 
-                    <!--                        <ImageView-->
-                    <!--                            android:layout_width="258dp"-->
-                    <!--                            android:layout_height="152dp"-->
-                    <!--                            android:src="@drawable/h7"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <ImageView
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h6"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="124dp"-->
-                    <!--                            android:fontFamily="@font/roboto_rgl"-->
-                    <!--                            android:text="Badrinath"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="12dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Northmost Village"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView50" />
 
-                    <!--                        <TextView-->
-                    <!--                            android:layout_width="wrap_content"-->
-                    <!--                            android:layout_height="wrap_content"-->
-                    <!--                            android:layout_marginStart="16dp"-->
-                    <!--                            android:layout_marginTop="101dp"-->
-                    <!--                            android:fontFamily="@font/roboto_bold"-->
-                    <!--                            android:text="Taptkund"-->
-                    <!--                            android:textColor="@color/white"-->
-                    <!--                            android:textSize="17dp"-->
-                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
-                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
-                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+                        <TextView
+                            android:id="@+id/textView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Turtuk"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    #image7
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="303dp"
+                            android:layout_height="178dp"
+                            android:src="@drawable/h7"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Badrinath"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="110dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Taptkund"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </LinearLayout>
+
             </HorizontalScrollView>
 
             #world
@@ -450,7 +469,7 @@
                 android:layout_width="307.71dp"
                 android:layout_height="288dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="18dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView34">
@@ -494,10 +513,10 @@
                             android:id="@+id/textView36"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
                             android:fontFamily="@font/roboto_rgl"
                             android:text="Narmada"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginStart="8dp"
                             android:textColor="@color/white"
                             android:textSize="16dp"
                             app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -514,7 +533,7 @@
                             android:textColor="@color/white"
                             android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"/>
+                            app:layout_constraintTop_toTopOf="parent" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -547,10 +566,10 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
                             android:fontFamily="@font/roboto_rgl"
                             android:text="Navsari"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginStart="8dp"
                             android:textColor="@color/white"
                             android:textSize="16dp"
                             app:layout_constraintStart_toEndOf="@+id/img1"
@@ -581,6 +600,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
+                            android:id="@+id/imageView18"
                             android:layout_width="288dp"
                             android:layout_height="288dp"
                             android:src="@drawable/d3"
@@ -588,35 +608,36 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
+                            android:id="@+id/img2"
+                            android:layout_width="17dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="8dp"
                             android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintStart_toStartOf="@+id/textView39"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="201dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
                             android:fontFamily="@font/roboto_rgl"
                             android:text="Jaipur"
                             android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/img2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
                         <TextView
+                            android:id="@+id/textView39"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="14dp"
-                            android:layout_marginTop="176dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="200dp"
                             android:fontFamily="@font/roboto_bold"
                             android:text="Hava Mahal"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -631,6 +652,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
+                            android:id="@+id/imageView19"
                             android:layout_width="288dp"
                             android:layout_height="288dp"
                             android:src="@drawable/d4"
@@ -638,35 +660,36 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
+                            android:id="@+id/img3"
+                            android:layout_width="17dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="8dp"
                             android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintStart_toStartOf="@+id/textView41"
+                            app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="201dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
                             android:fontFamily="@font/roboto_rgl"
-                            android:text="Paris"
+                            android:text="paris"
                             android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/img3"
+                            app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
                         <TextView
+                            android:id="@+id/textView41"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="14dp"
-                            android:layout_marginTop="176dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="200dp"
                             android:fontFamily="@font/roboto_bold"
                             android:text="Barcelona"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -688,35 +711,36 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
+                            android:id="@+id/img4"
+                            android:layout_width="17dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="8dp"
                             android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintStart_toStartOf="@+id/textView42"
+                            app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="201dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
                             android:fontFamily="@font/roboto_rgl"
                             android:text="Ladakh"
                             android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/img4"
+                            app:layout_constraintTop_toBottomOf="@+id/textView42" />
 
                         <TextView
+                            android:id="@+id/textView42"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="14dp"
-                            android:layout_marginTop="176dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="200dp"
                             android:fontFamily="@font/roboto_bold"
-                            android:text="Zanskar River"
+                            android:text="Zanskar river"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -738,35 +762,36 @@
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
+                            android:id="@+id/img5"
+                            android:layout_width="17dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="8dp"
                             android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintStart_toStartOf="@+id/textView43"
+                            app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="201dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="6dp"
                             android:fontFamily="@font/roboto_rgl"
-                            android:text="Darjeeling"
+                            android:text="Ladakh"
                             android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toEndOf="@+id/img5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
                         <TextView
+                            android:id="@+id/textView43"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="14dp"
-                            android:layout_marginTop="176dp"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="200dp"
                             android:fontFamily="@font/roboto_bold"
-                            android:text="Tiger Hill"
+                            android:text="Zanskar river"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
