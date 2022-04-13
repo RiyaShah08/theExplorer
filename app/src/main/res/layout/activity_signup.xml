@@ -269,6 +269,7 @@
 
         #login with google
         <com.google.android.material.card.MaterialCardView
+            android:onClick="loginwithgoogle1"
             android:layout_width="305dp"
             android:layout_height="53dp"
             android:layout_marginTop="640dp"
