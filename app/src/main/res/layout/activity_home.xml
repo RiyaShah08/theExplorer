@@ -809,8 +809,8 @@
                 android:text="NearBy"
                 android:textColor="@color/txtcolor"
                 android:textSize="21dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -821,4 +821,20 @@
         app:layout_constraintTop_toTopOf="parent">
 
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/menu"
+        android:outlineAmbientShadowColor="@color/menu"
+        android:outlineSpotShadowColor="@color/menu"
+        app:itemIconSize="30dp"
+        app:itemRippleColor="@color/menu"
+        app:itemTextColor="@color/menu"
+        app:menu="@menu/nav_bar">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </RelativeLayout>

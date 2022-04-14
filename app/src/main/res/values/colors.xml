@@ -11,4 +11,5 @@
     <color name="txtcolor">#23545C</color>
     <color name="grey_desc">#707070</color>
     <color name="desc_txt">#9A9A9A</color>
+    <color name="menu">#F7F7F7</color>
 </resources>

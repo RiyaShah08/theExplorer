@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/post"
+        android:icon="@drawable/post"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/location_share"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/person"
+        android:icon="@drawable/person_pro"
+        tools:ignore="MenuTitle" />
+
+</menu>
