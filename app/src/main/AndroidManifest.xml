@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.travelguideapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -11,8 +16,8 @@
         android:theme="@style/Theme.Travelguideapp">
         <activity
             android:name=".map_activity"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".Home"
             android:exported="false"
@@ -34,7 +39,7 @@
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
-            android:name=".bluespot_desc1"
+            android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
@@ -54,7 +59,7 @@
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".bluespot_desc1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
