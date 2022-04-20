@@ -10,11 +10,11 @@ class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-//
-//        val txt1 = findViewById(R.id.txt1) as TextView
-//        txt1.setOnClickListener {
-//            val intent = Intent(this, bluespot_main::class.java)
-//            startActivity(intent)
-//        }
+
+        val card = findViewById(R.id.card) as ImageView
+        card.setOnClickListener {
+            val intent = Intent(this, bluespot_main::class.java)
+            startActivity(intent)
+        }
     }
 }

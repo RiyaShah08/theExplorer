@@ -493,6 +493,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
+                            android:id="@+id/card"
                             android:layout_width="288dp"
                             android:layout_height="288dp"
                             android:src="@drawable/d1"

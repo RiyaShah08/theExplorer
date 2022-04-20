@@ -23,8 +23,8 @@ class map_activity : AppCompatActivity(), OnMapReadyCallback {
     }
 //
     override fun onMapReady(googleMap: GoogleMap) {
-    val sydney = LatLng(-33.852, 151.211)
-    googleMap.addMarker(MarkerOptions().position(sydney).title("Marker in Sydney")
+    val location = LatLng(23.7024, 72.5426)
+    googleMap.addMarker(MarkerOptions().position(location).title("My Location")
     )
     }
 }
