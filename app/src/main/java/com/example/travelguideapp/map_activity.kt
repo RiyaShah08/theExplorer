@@ -24,7 +24,6 @@ class map_activity : AppCompatActivity(), OnMapReadyCallback {
 //
     override fun onMapReady(googleMap: GoogleMap) {
     val location = LatLng(23.7024, 72.5426)
-    googleMap.addMarker(MarkerOptions().position(location).title("My Location")
-    )
+    googleMap.addMarker(MarkerOptions().position(location).title("My Location"))
     }
 }

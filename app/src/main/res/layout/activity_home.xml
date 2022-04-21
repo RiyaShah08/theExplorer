@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -11,7 +10,7 @@
 
     <ScrollView
         android:layout_width="362dp"
-        android:layout_height="783dp"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -1432,17 +1431,18 @@
 
             #second layer
             <HorizontalScrollView
-                android:layout_width="303.64dp"
+                android:id="@+id/horizontalScrollView7"
+                android:layout_width="309.2dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="1300dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/textView54">
 
                 <LinearLayout
-                    android:layout_width="243dp"
-                    android:layout_height="243dp"
+                    android:layout_width="288dp"
+                    android:layout_height="288dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginTop="1dp"
                     android:layout_marginBottom="1dp"
@@ -1452,8 +1452,8 @@
 
                     #image1
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1465,43 +1465,47 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
+                            android:id="@+id/txt1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="GOA"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="20dp"
                             android:layout_marginTop="175dp"
                             android:fontFamily="@font/roboto_bold"
                             android:text="Shivling Waterfall"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="GOA"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge1"
+                            app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+                        <ImageView
+                            android:id="@+id/imge1"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image2
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1513,43 +1517,47 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
+                            android:id="@+id/txt2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="Mandovi"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
+                            android:layout_marginStart="20dp"
                             android:layout_marginTop="175dp"
                             android:fontFamily="@font/roboto_bold"
                             android:text="Dudhsagar Falls"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge2"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Mandavi"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge2"
+                            app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image3
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1561,28 +1569,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="New Zealand"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1590,14 +1578,38 @@
                             android:fontFamily="@font/roboto_bold"
                             android:text="Larnach Castle"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge3"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="New Zealand"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge3"
+                            app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image4
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1609,28 +1621,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="Himachal Pradesh"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1641,11 +1633,35 @@
                             android:textSize="17dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge4"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Himachal Pradesh"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge4"
+                            app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image5
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1657,28 +1673,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="Rajasthan"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1689,11 +1685,35 @@
                             android:textSize="17dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge5"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Rajasthan"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge5"
+                            app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image6
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1705,28 +1725,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="West Bengal"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1734,14 +1734,38 @@
                             android:fontFamily="@font/roboto_bold"
                             android:text="Darjeeling"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge6"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="West Bengal"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge6"
+                            app:layout_constraintTop_toBottomOf="@+id/txt6"/>
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image7
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1753,28 +1777,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="New Zealand"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1782,14 +1786,38 @@
                             android:fontFamily="@font/roboto_bold"
                             android:text="Larnach Castle"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge7"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="New Zealand"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge7"
+                            app:layout_constraintTop_toBottomOf="@+id/txt7" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image8
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1801,28 +1829,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="Kasol"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1830,14 +1838,38 @@
                             android:fontFamily="@font/roboto_bold"
                             android:text="Alpine"
                             android:textColor="@color/white"
-                            android:textSize="17dp"
+                            android:textSize="21dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge8"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt8" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Kasol"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge8"
+                            app:layout_constraintTop_toBottomOf="@+id/txt8" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                     #image9
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="245dp"
-                        android:layout_height="245dp"
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
                         android:layout_marginEnd="19dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent">
@@ -1849,28 +1881,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:layout_width="13.46dp"
-                            android:layout_height="15.14dp"
-                            android:layout_marginStart="13.5dp"
-                            android:layout_marginTop="203dp"
-                            android:src="@drawable/location"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
                         <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="33dp"
-                            android:layout_marginTop="203dp"
-                            android:fontFamily="@font/roboto_rgl"
-                            android:text="Uttarkashi"
-                            android:textColor="@color/white"
-                            android:textSize="12dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
+                            android:id="@+id/txt9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
@@ -1881,15 +1893,44 @@
                             android:textSize="17dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge9"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintTop_toBottomOf="@+id/txt9"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Uttarkashi"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge9"
+                            app:layout_constraintTop_toBottomOf="@+id/txt9" />
+
                     </androidx.constraintlayout.widget.ConstraintLayout>
+
                 </LinearLayout>
+
             </HorizontalScrollView>
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
+
     <com.google.android.material.navigation.NavigationView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints">
 
     </com.google.android.material.navigation.NavigationView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
