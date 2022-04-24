@@ -13,7 +13,6 @@ class map_activity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
 
-
         // Get the SupportMapFragment and request notification when the map is ready to be used.
         val mapFragment = supportFragmentManager.findFragmentById(R.id.map) as? SupportMapFragment
         mapFragment?.getMapAsync(this)
@@ -21,9 +20,12 @@ class map_activity : AppCompatActivity(), OnMapReadyCallback {
 //        mapFragment.getMapAsync(this)
 
     }
-//
+    //
     override fun onMapReady(googleMap: GoogleMap) {
-    val location = LatLng(23.7024, 72.5426)
-    googleMap.addMarker(MarkerOptions().position(location).title("My Location"))
+        fun var1(googleMap: GoogleMap) {
+            val location = LatLng(23.7024, 72.5426)
+            googleMap.addMarker(MarkerOptions().position(location).title("My Location"))
+        }
+
     }
 }
