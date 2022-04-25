@@ -19,7 +19,6 @@ class bluespot_desc : AppCompatActivity() {
 
         val txt1 = findViewById(R.id.bs1) as TextView
         txt1.setOnClickListener {
-            Marker.
             val intent = Intent(this, map_activity::class.java)
             startActivity(intent)
         }

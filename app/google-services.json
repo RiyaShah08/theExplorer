@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "377482358866",
+    "firebase_url": "https://travelguideapp-c22a1-default-rtdb.firebaseio.com",
     "project_id": "travelguideapp-c22a1",
     "storage_bucket": "travelguideapp-c22a1.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "377482358866-suhb78elcomd3lihlu7hvq82tnnrj7tv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.travelguideapp",
+            "certificate_hash": "9e313f1938ff6bd3eda55143ca55bb5f83ccc339"
+          }
+        },
         {
           "client_id": "377482358866-q7r5jd901ls6tk5mqovcsd8ld36r4f7u.apps.googleusercontent.com",
           "client_type": 3

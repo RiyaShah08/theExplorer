@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.travelguideapp">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
@@ -14,6 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Travelguideapp">
+        <activity
+            android:name=".recycle_blue"
+            android:exported="false" />
+        <activity
+            android:name=".bluespot"
+            android:exported="false" />
         <activity
             android:name=".map_activity"
             android:exported="false"
@@ -71,7 +77,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAbPHEjLxWuToxlWUWB30EZSrEbRFlsCLc"/>
+            android:value="AIzaSyAbPHEjLxWuToxlWUWB30EZSrEbRFlsCLc" />
     </application>
 
 </manifest>
