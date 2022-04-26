@@ -9,6 +9,7 @@
     tools:context=".bluespot_desc">
 
         <ImageView
+            android:id="@+id/back1"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:layout_margin="27dp"
