@@ -17,5 +17,11 @@ class bluespot_desc1 : AppCompatActivity() {
             val intent = Intent(this, bluespot_main::class.java)
             startActivity(intent)
         }
+
+        val blue1 = findViewById(R.id.bs2) as TextView
+        blue1.setOnClickListener {
+            val intent = Intent(this, map_activity::class.java)
+            startActivity(intent)
+        }
     }
 }
