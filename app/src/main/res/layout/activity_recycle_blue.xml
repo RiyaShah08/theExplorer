@@ -70,10 +70,9 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
             android:layout_below="@+id/materialCardView"
+            android:layout_marginTop="7dp"
             android:fontFamily="@font/roboto_black"
-            android:text="Secluded Beach"
             android:textColor="@color/black"
             android:textSize="17dp" />
 
@@ -84,7 +83,6 @@
             android:layout_below="@+id/textView"
             android:fontFamily="@font/roboto_black"
             android:gravity="center"
-            android:text="Goa"
             android:textColor="@color/desc_txt"
             android:textSize="15dp" />
 
