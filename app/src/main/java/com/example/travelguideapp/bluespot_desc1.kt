@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 
 class bluespot_desc1 : AppCompatActivity() {
@@ -11,9 +12,9 @@ class bluespot_desc1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bluespot_desc1)
 
-        val card2 = findViewById(R.id.card2) as CardView
-        card2.setOnClickListener {
-            val intent = Intent(this, map_activity::class.java)
+        val txt2 = findViewById(R.id.back2) as ImageView
+        txt2.setOnClickListener {
+            val intent = Intent(this, bluespot_main::class.java)
             startActivity(intent)
         }
     }
