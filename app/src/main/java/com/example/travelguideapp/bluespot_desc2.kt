@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 
 class bluespot_desc2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,7 +18,7 @@ class bluespot_desc2 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val blue1 = findViewById(R.id.bs3) as TextView
+        val blue1 = findViewById(R.id.bs3) as CardView
         blue1.setOnClickListener {
             val intent = Intent(this, map_activity::class.java)
             startActivity(intent)
