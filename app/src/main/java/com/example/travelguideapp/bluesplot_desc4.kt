@@ -14,7 +14,7 @@ class bluesplot_desc4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bluesplot_desc4)
 
-        var bookmark = findViewById(R.id.bookmark) as CheckBox
+        var bookmark = findViewById(R.id.bookmark5) as CheckBox
         bookmark.setOnCheckedChangeListener{ checkBox, isChecked->
 
             if(isChecked){

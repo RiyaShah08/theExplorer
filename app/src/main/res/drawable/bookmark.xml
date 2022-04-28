@@ -2,13 +2,13 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:drawable="@drawable/bookmark1"
+        android:drawable="@drawable/like"
         android:state_checked="false"/>
 
     <item
-        android:drawable="@drawable/full_book"
+        android:drawable="@drawable/like_full"
         android:state_checked="true"/>
 
-    <item android:drawable="@drawable/bookmark1"/>
+    <item android:drawable="@drawable/like"/>
 
 </selector>

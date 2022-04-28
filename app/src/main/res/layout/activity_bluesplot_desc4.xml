@@ -77,7 +77,7 @@
         </LinearLayout>
 
     <CheckBox
-        android:id="@+id/bookmark"
+        android:id="@+id/bookmark5"
         android:layout_width="35dp"
         android:layout_height="35dp"
         android:layout_marginEnd="5dp"
@@ -88,7 +88,9 @@
         android:textColorHint="@color/black"
         android:textColor="@color/black"
         android:shadowColor="@color/black"
+        android:buttonTint="@color/black"
         android:button="@drawable/bookmark"
+        app:useMaterialThemeColors="true"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/imageView21"
         app:layout_constraintTop_toTopOf="@+id/linear1" />

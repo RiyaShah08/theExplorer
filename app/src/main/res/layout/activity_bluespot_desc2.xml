@@ -76,24 +76,44 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imageView_book"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:layout_marginEnd="75dp"
-            android:src="@drawable/book"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/linear1" />
+    <CheckBox
+        android:id="@+id/bookmark4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="5dp"
+        android:button="@drawable/bookmark"
+        android:buttonTint="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:shadowColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorLink="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageView23"
+        app:layout_constraintTop_toTopOf="@+id/linear1"
+        app:useMaterialThemeColors="true" />
 
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginEnd="40dp"
-            android:src="@drawable/share"
-            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/linear1" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView_book"-->
+<!--            android:layout_width="27dp"-->
+<!--            android:layout_height="27dp"-->
+<!--            android:layout_marginEnd="75dp"-->
+<!--            android:src="@drawable/book"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/linear1" />-->
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/share"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linear1" />
 
         <TextView
             android:id="@+id/txt1"
