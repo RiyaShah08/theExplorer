@@ -15,7 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travelguideapp">
         <activity
-            android:name=".recycle_blue"
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nearby_more"
             android:exported="false" />
         <activity
             android:name=".map_activity"
@@ -62,7 +65,7 @@
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".recycle_blue"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.NoActionBar">
             <intent-filter>

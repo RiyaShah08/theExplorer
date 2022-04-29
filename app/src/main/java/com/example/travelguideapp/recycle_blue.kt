@@ -40,7 +40,7 @@ class recycle_blue : AppCompatActivity() {
 
         // below line is used to get
         // reference for our database.
-        databaseReference = firebaseDatabase!!.getReference("user1")
+        databaseReference = firebaseDatabase!!.getReference("users/user1")
 
         // initializing our object class variable.
 
@@ -65,11 +65,11 @@ class recycle_blue : AppCompatActivity() {
                 // changed in our Firebase console.
                 // below line is for getting the data from
                 // snapshot of our database.
-                val value = snapshot.getValue(String::class.java)
+                val value = snapshot.value
 
                 // after getting the value we are setting
                 // our value to our text view in below line.
-                retrieveTV!!.text = value
+                retrieveTV!!.text = value.toString()
             }
 
             override fun onCancelled(error: DatabaseError) {
