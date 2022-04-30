@@ -48,29 +48,37 @@
         android:padding="25dp"
         android:layout_marginTop="150dp">
 
-        <com.google.android.material.card.MaterialCardView
-            android:id="@+id/materialCardView"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/raw_image"
             android:layout_width="144dp"
             android:layout_height="185dp"
-            android:layout_alignParentTop="true"
-            android:background="@color/grey_desc"
-            app:cardBackgroundColor="@color/screenbg"
-            app:cardCornerRadius="25dp"
-            app:strokeColor="@color/desc_txt">
+            app:cardCornerRadius="25dp">
 
-            <ImageView
-                android:id="@+id/imge1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/grey_desc" />
+        </androidx.recyclerview.widget.RecyclerView>
 
-        </com.google.android.material.card.MaterialCardView>
+        <!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:id="@+id/materialCardView"-->
+<!--            android:layout_width="144dp"-->
+<!--            android:layout_height="185dp"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:background="@color/grey_desc"-->
+<!--            app:cardBackgroundColor="@color/screenbg"-->
+<!--            app:cardCornerRadius="25dp"-->
+<!--            app:strokeColor="@color/desc_txt">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imge1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/grey_desc" />-->
+
+<!--        </com.google.android.material.card.MaterialCardView>-->
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/materialCardView"
+            android:layout_below="@+id/raw_image"
             android:layout_marginTop="7dp"
             android:fontFamily="@font/roboto_black"
             android:textColor="@color/black"

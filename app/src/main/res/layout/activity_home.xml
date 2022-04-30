@@ -21,6 +21,7 @@
 
             #burger
             <ImageView
+                android:id="@+id/nav_menu"
                 android:layout_width="19.35dp"
                 android:layout_height="12.62dp"
                 android:layout_marginStart="30dp"
@@ -149,6 +150,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
+                            android:id="@+id/image1"
                             android:layout_width="303dp"
                             android:layout_height="178dp"
                             android:src="@drawable/h1"
@@ -1459,6 +1461,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
+                            android:id="@+id/image2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/nw1"
@@ -1925,12 +1928,5 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints">
-
-    </com.google.android.material.navigation.NavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
