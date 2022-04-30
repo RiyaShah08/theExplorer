@@ -8,32 +8,42 @@
     tools:context=".contact_us">
 
     <ImageView
+        android:id="@+id/imageView26"
         android:layout_width="21dp"
         android:layout_height="20dp"
-        android:layout_marginTop="37dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="@color/black"
+        android:foregroundTint="@color/black"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
         android:src="@drawable/arrow"
+        android:tint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseAppTint" />
+
     <TextView
+        android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="105dp"
-        android:text="More Categories"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Contact Us"
         android:textColor="@color/black"
         android:textSize="24dp"
-        android:fontFamily="@font/roboto_bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
-        android:layout_width="match_parent"
-        android:layout_height="285dp"
-        android:layout_marginLeft="45dp"
-        android:layout_marginRight="45dp"
-        android:background="@color/screenbg"
+        android:id="@+id/materialCardView2"
+        android:layout_width="285dp"
+        android:layout_height="241dp"
         android:layout_marginTop="108dp"
+        android:background="@color/screenbg"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -41,8 +51,83 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/screenbg"
-            android:src="@drawable/contact_us"/>
+            android:src="@drawable/contact_us" />
 
     </com.google.android.material.card.MaterialCardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bs4"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="35dp"
+        app:cardBackgroundColor="@color/opacity"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:hint="Your Email"
+            android:layout_marginStart="25dp"
+            android:textColorHint="@color/white"
+            android:textSize="14dp"
+            android:inputType="textEmailAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bs5"
+        android:layout_width="287dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="25dp"
+        app:cardBackgroundColor="@color/opacity"
+        app:cardCornerRadius="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bs4">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:hint="Message"
+            android:textColorHint="@color/white"
+            android:textSize="16dp"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bs6"
+        android:layout_width="287dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30sp"
+        app:cardBackgroundColor="@color/txtcolor"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bs5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Send Message"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

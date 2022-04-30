@@ -12,4 +12,5 @@
     <color name="grey_desc">#707070</color>
     <color name="desc_txt">#9A9A9A</color>
     <color name="menu">#F7F7F7</color>
+    <color name="opacity">#C45F7F84</color>
 </resources>

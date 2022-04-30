@@ -18,8 +18,8 @@
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
-        android:layout_width="330dp"
-        android:layout_height="380dp"
+        android:layout_width="278dp"
+        android:layout_height="320dp"
         android:layout_marginTop="75dp"
         android:background="@color/grey_desc"
         app:cardBackgroundColor="@color/screenbg"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/grey_desc"
-            android:src="@drawable/discover1" />
+            android:src="@drawable/discover_post" />
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -40,7 +40,7 @@
         android:id="@+id/linear1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialCardView">
@@ -50,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Greate wall of china"
-            android:textSize="25dp"
+            android:textSize="22dp"
             android:textStyle="normal"
             android:textColor="@color/black"
             android:fontFamily="@font/roboto_black"/>
@@ -88,10 +88,11 @@
 
     <ImageView
         android:id="@+id/imageView25"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginEnd="40dp"
         android:src="@drawable/share"
+        app:layout_constraintBottom_toBottomOf="@+id/bookmark3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/linear1" />
 
@@ -113,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="that were built across the historical northern borders"
+        android:text="that were built across the historical northern border"
         android:textColor="@color/desc_txt"
         android:fontFamily="@font/roboto_black"
         android:textSize="12dp"
@@ -137,12 +138,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
-        android:text="against various nomadicgroup."
+        android:text="against various nomadicgroup from the Eurasian"
         android:textColor="@color/desc_txt"
         android:fontFamily="@font/roboto_black"
         android:textSize="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="steppe. sereval walls were bulit from selctive"
+        android:textColor="@color/desc_txt"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="stretches."
+        android:textColor="@color/desc_txt"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/bs4"
@@ -153,7 +179,7 @@
         app:cardCornerRadius="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt3">
+        app:layout_constraintTop_toBottomOf="@+id/txt6">
 
         <TextView
             android:layout_width="wrap_content"
