@@ -2,15 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".item_image">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/raw_image"
         android:layout_width="144dp"
         android:layout_height="185dp"
-        android:layout_marginStart="25dp"
         android:background="@color/grey_desc"
         app:cardBackgroundColor="@color/screenbg"
         app:cardCornerRadius="25dp"
@@ -19,12 +22,45 @@
         app:strokeColor="@color/desc_txt">
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/grey_desc"
             android:outlineAmbientShadowColor="@color/desc_txt"
             android:outlineSpotShadowColor="@color/desc_txt" />
 
     </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/placename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/raw_image"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/raw_image" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/placecoo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textView"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/desc_txt"-->
+<!--            android:textSize="15dp" />-->
+
+        <TextView
+            android:id="@+id/placedis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:textColor="@color/desc_txt"
+            android:textSize="15dp" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

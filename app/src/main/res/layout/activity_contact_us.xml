@@ -67,6 +67,7 @@
         app:layout_constraintTop_toBottomOf="@+id/materialCardView2">
 
         <EditText
+            android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -92,6 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/bs4">
 
         <EditText
+            android:id="@+id/message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
@@ -107,7 +109,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/bs6"
+        android:id="@+id/sendmessage"
         android:layout_width="287dp"
         android:layout_height="46dp"
         android:layout_marginTop="30sp"

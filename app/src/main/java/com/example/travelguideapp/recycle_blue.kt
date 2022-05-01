@@ -25,76 +25,113 @@ private const val REQUEST_CODE_IMAGE_PICK = 0
 
 class recycle_blue : AppCompatActivity() {
     // creating a variable for our Firebase Database.
-    var firebaseDatabase: FirebaseDatabase? = null
-    var curFile: Uri? = null
-
-    val imageRef = Firebase.storage.reference
-
-    // creating a variable for our Database Reference for Firebase.
-    var databaseReference: DatabaseReference? = null
-
-    // variable for Text view.
-    private var retrieveTV: TextView? = null
-    private var retrieveTV1: TextView? = null
-    private var retrieveTV2: ImageView? = null
+//    var firebaseDatabase: FirebaseDatabase? = null
+//    var curFile: Uri? = null
+//
+//    val imageRef = Firebase.storage.reference
+//
+//    // creating a variable for our Database Reference for Firebase.
+//    var databaseReference: DatabaseReference? = null
+//
+//    // variable for Text view.
+//    private var retrieveTV: TextView? = null
+//    private var retrieveTV1: TextView? = null
+//    private var retrieveTV2: ImageView? = null
+    private lateinit var dref : DatabaseReference
+    private lateinit var useRecyclerView: RecyclerView
+    private lateinit var useArrayList: ArrayList<realtime_fetch>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycle_blue)
 
-        raw_image.setOnClickListener {
-            Intent(Intent.ACTION_GET_CONTENT).also {
-                it.type = "users/user1/*"
-                startActivityForResult(it, REQUEST_CODE_IMAGE_PICK)
-            }
-        }
+        useRecyclerView = findViewById(R.id.raw_image)
+        useRecyclerView.layoutManager = LinearLayoutManager(this)
+        useRecyclerView.setHasFixedSize(true)
 
-        // below line is used to get the instance of our Firebase database.
-        firebaseDatabase = FirebaseDatabase.getInstance()
-
-        // below line is used to get reference for our database.
-        databaseReference = firebaseDatabase!!.getReference("users/user1")
-
-        // initializing our object class variable.
-
-        retrieveTV2 = findViewById(R.id.imge1)
-        retrieveTV = findViewById(R.id.textView)
-        retrieveTV1 = findViewById(R.id.textView3)
-
-        // calling method for getting data.
-        getdata()
+        useArrayList = arrayListOf<realtime_fetch>()
+        getUserData()
+//
+//        raw_image.setOnClickListener {
+//            Intent(Intent.ACTION_GET_CONTENT).also {
+//                it.type = "users/user1/*"
+//                startActivityForResult(it, REQUEST_CODE_IMAGE_PICK)
+//            }
+//        }
     }
 
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if(resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE_IMAGE_PICK) {
-            data?.data?.let {
-                curFile = it
-                raw_image.setImageURI(it)
-            }
-        }
-    }
+    private fun getUserData() {
+        dref = FirebaseDatabase.getInstance().getReference("category")
 
-    private fun getdata() {
-
-        // calling add value event listener method for getting the values from database.
-        databaseReference!!.addValueEventListener(object : ValueEventListener {
+        dref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                // this method is call to get the realtime updates in the data. this method is called when the data is changed in our Firebase console.
-                // below line is for getting the data from snapshot of our database.
-                val value = snapshot.value
 
-                // after getting the value we are setting our value to our text view in below line.
-                retrieveTV!!.text = value.toString()
+                if (snapshot.exists()) {
+                    for (usersnapot in snapshot.children) {
+                        val user = usersnapot.getValue(realtime_fetch::class.java)
+                        useArrayList.add(user!!)
+                    }
+
+                    useRecyclerView.adapter = MyAdapter(useArrayList)
+                }
             }
 
             override fun onCancelled(error: DatabaseError) {
-                Toast.makeText(this@recycle_blue, "Required Field must be not empty", Toast.LENGTH_LONG).show()
+
             }
         })
     }
 }
 
-private fun Any.setImageURI(it: Uri) {
 
-}
+//
+//        // below line is used to get the instance of our Firebase database.
+//        firebaseDatabase = FirebaseDatabase.getInstance()
+//
+//        // below line is used to get reference for our database.
+//        databaseReference = firebaseDatabase!!.getReference("users/user1")
+//
+//        // initializing our object class variable.
+//
+//        retrieveTV2 = findViewById(R.id.imageView)
+//        retrieveTV = findViewById(R.id.textView)
+//        retrieveTV1 = findViewById(R.id.textView3)
+//
+//        // calling method for getting data.
+//        getdata()
+//    }
+//
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        super.onActivityResult(requestCode, resultCode, data)
+//        if(resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE_IMAGE_PICK) {
+//            data?.data?.let {
+//                curFile = it
+//                raw_image.setImageURI(it)
+//            }
+//        }
+//    }
+//
+//    private fun getdata() {
+//
+//        // calling add value event listener method for getting the values from database.
+//        databaseReference!!.addValueEventListener(object : ValueEventListener {
+//            override fun onDataChange(snapshot: DataSnapshot) {
+//                // this method is call to get the realtime updates in the data. this method is called when the data is changed in our Firebase console.
+//                // below line is for getting the data from snapshot of our database.
+//                val value = snapshot.value
+//
+//                // after getting the value we are setting our value to our text view in below line.
+//                retrieveTV!!.text = value.toString()
+//
+//            }
+//
+//            override fun onCancelled(error: DatabaseError) {
+//                Toast.makeText(this@recycle_blue, "Required Field must be not empty", Toast.LENGTH_LONG).show()
+//            }
+//        })
+//    }
+//}
+//
+//private fun Any.setImageURI(it: Uri) {
+//
+//}

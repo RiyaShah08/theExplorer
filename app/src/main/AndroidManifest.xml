@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travelguideapp">
         <activity
-            android:name=".MainActivity"
+            android:name=".contact_us"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
@@ -37,7 +37,7 @@
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
-            android:name=".recycle_blue"
+            android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
@@ -89,7 +89,7 @@
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
-            android:name=".contact_us"
+            android:name=".recycle_blue"
             android:exported="true"
             android:theme="@style/Theme.MaterialComponents.NoActionBar">
             <intent-filter>

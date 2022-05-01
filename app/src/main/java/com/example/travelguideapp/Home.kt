@@ -2,6 +2,8 @@ package com.example.travelguideapp
 
 import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.location.Location
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,26 +13,28 @@ import android.widget.ScrollView
 import android.widget.TextView
 import androidx.constraintlayout.motion.widget.Debug.getLocation
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import kotlinx.android.synthetic.main.activity_home.*
 
 
 class Home : AppCompatActivity() {
-
-    val permission = arrayOf(
-        Manifest.permission.ACCESS_FINE_LOCATION
-    )
-    val permissioncode = 78
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        askPermission();
-
-//        val isAlertWindowPermissionGranted: Boolean = TedPermissionUtil.isGranted(Manifest.permission.SYSTEM_ALERT_WINDOW)
-//        Log.d("ted", "isAlertWindowPermissionGranted: $isAlertWindowPermissionGranted")
-//
-//        getLocation();
+        val SEARCH = findViewById(R.id.Location) as CardView
+        SEARCH.setOnClickListener {
+            val intent = Intent(this, map_activity::class.java)
+            startActivity(intent)
+        }
 
         val card = findViewById(R.id.card) as ImageView
         card.setOnClickListener {
@@ -61,22 +65,51 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, bluespot_main::class.java)
             startActivity(intent)
         }
-    }
 
-    private fun askPermission() {
-        ActivityCompat.requestPermissions(this, permission, permissioncode)
-    }
-
-//    private fun getLocation()
-//    {
-//        val permissionlistener: PermissionListener = object : PermissionListener() {
-//            fun onPermissionGranted() {
-//                Toast.makeText(this@Home, "Permission Granted", Toast.LENGTH_SHORT).show()
-//            }
-//
-//            fun onPermissionDenied(deniedPermissions: List<String?>) {
-//                Toast.makeText(this@Home, "Permission Denied\n$deniedPermissions", Toast.LENGTH_SHORT).show()
+//        title = "KotlinApp"
+//        if (ContextCompat.checkSelfPermission(
+//                this@Home,
+//                Manifest.permission.ACCESS_FINE_LOCATION
+//            ) !== PackageManager.PERMISSION_GRANTED
+//        ) {
+//            if (ActivityCompat.shouldShowRequestPermissionRationale(
+//                    this@Home, Manifest.permission.ACCESS_FINE_LOCATION
+//                )
+//            ) {
+//                ActivityCompat.requestPermissions(
+//                    this@Home,
+//                    arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1
+//                )
+//            } else {
+//                ActivityCompat.requestPermissions(
+//                    this@Home,
+//                    arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1
+//                )
 //            }
 //        }
 //    }
+//
+//    override fun onRequestPermissionsResult(
+//        requestCode: Int, permissions: Array<String>,
+//        grantResults: IntArray
+//    ) {
+//        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+//        when (requestCode) {
+//            1 -> {
+//                if (grantResults.isNotEmpty() && grantResults[0] ==
+//                    PackageManager.PERMISSION_GRANTED
+//                ) {
+//                    if ((ContextCompat.checkSelfPermission(
+//                            this@Home, Manifest.permission.ACCESS_FINE_LOCATION
+//                        ) === PackageManager.PERMISSION_GRANTED)
+//                    ) {
+//                        Toast.makeText(this, "Permission Granted", Toast.LENGTH_SHORT).show()
+//                    }
+//                } else {
+//                    Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show()
+//                }
+//                return
+//            }
+//        }
+    }
 }
