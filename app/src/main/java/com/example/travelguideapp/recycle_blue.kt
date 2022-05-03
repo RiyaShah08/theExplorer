@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.ImageView
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,19 +25,6 @@ import kotlinx.android.synthetic.main.activity_recycle_blue.*
 private const val REQUEST_CODE_IMAGE_PICK = 0
 
 class recycle_blue : AppCompatActivity() {
-    // creating a variable for our Firebase Database.
-//    var firebaseDatabase: FirebaseDatabase? = null
-//    var curFile: Uri? = null
-//
-//    val imageRef = Firebase.storage.reference
-//
-//    // creating a variable for our Database Reference for Firebase.
-//    var databaseReference: DatabaseReference? = null
-//
-//    // variable for Text view.
-//    private var retrieveTV: TextView? = null
-//    private var retrieveTV1: TextView? = null
-//    private var retrieveTV2: ImageView? = null
     private lateinit var dref : DatabaseReference
     private lateinit var useRecyclerView: RecyclerView
     private lateinit var useArrayList: ArrayList<realtime_fetch>
@@ -51,7 +39,8 @@ class recycle_blue : AppCompatActivity() {
 
         useArrayList = arrayListOf<realtime_fetch>()
         getUserData()
-//
+
+
 //        raw_image.setOnClickListener {
 //            Intent(Intent.ACTION_GET_CONTENT).also {
 //                it.type = "users/user1/*"

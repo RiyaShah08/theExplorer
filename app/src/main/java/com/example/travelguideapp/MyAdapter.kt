@@ -10,7 +10,6 @@ import com.google.android.material.card.MaterialCardView
 
 class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView.Adapter<MyAdapter.MyViewHolder>() {
 
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_item_image,
         parent, false)
@@ -32,6 +31,7 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
+        val image: ImageView = itemView.findViewById(R.id.raw_image)
         val placename : TextView = itemView.findViewById(R.id.placename)
         val placedis : TextView = itemView.findViewById(R.id.placedis)
     }
