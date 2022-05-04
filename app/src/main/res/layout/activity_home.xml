@@ -21,7 +21,6 @@
             android:layout_height="1900dp">
 
             #burger
-
             <ImageView
                 android:id="@+id/nav_menu"
                 android:layout_width="19.35dp"
@@ -33,7 +32,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             #profile
-
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
@@ -70,7 +68,6 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             #search box
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/Location"
                 android:layout_width="307dp"
@@ -107,7 +104,6 @@
             </androidx.cardview.widget.CardView>
 
             #world
-
             <TextView
                 android:id="@+id/textView37"
                 android:layout_width="wrap_content"
@@ -122,7 +118,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
             #first layer
-
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView2"
                 android:layout_width="307dp"
@@ -144,7 +139,6 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     #image1
-
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -188,7 +182,6 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                     #image2
-
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
