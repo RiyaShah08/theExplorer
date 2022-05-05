@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/profile_nav"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/location"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/location"
+        android:title="Location" />
+
+    <item
+        android:id="@+id/Bluespot"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/placeios"
+        android:title="Blue Spot Places" />
+
+    <item
+        android:id="@+id/addpost"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/add"
+        android:title="Add Post" />
+
+    <item
+        android:id="@+id/Feedback"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/sendbackward"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/aboutus"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/about_us_nav"
+        android:title="About us" />
+
+    <item
+        android:id="@+id/contact"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/contact"
+        android:title="Contact us" />
+
+    <item
+        android:id="@+id/Logout"
+        android:enabled="true"
+        android:iconTint="@color/txtcolor"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+</menu>

@@ -3,9 +3,9 @@ package com.example.travelguideapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class navigation : AppCompatActivity() {
+class about_us : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_navigation)
+        setContentView(R.layout.activity_about_us)
     }
 }

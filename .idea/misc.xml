@@ -25,6 +25,7 @@
         <entry key="..\:/sem6/theExplorer/app/src/main/res/drawable/home.xml" value="0.26614583333333336" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/drawable/person.xml" value="0.1" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/drawable/profile.xml" value="0.26614583333333336" />
+        <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_about_us.xml" value="0.18659420289855072" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_bluesplot_desc4.xml" value="0.153125" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_bluespot.xml" value="0.25" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_bluespot_desc.xml" value="0.19202898550724637" />
@@ -48,8 +49,10 @@
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_recycle_blue1.xml" value="0.25" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/activity_signup.xml" value="0.23596014492753623" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/button_google.xml" value="0.23731884057971014" />
+        <entry key="..\:/sem6/theExplorer/app/src/main/res/layout/nav_header.xml" value="0.18659420289855072" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.25" />
         <entry key="..\:/sem6/theExplorer/app/src/main/res/menu/nav_bar.xml" value="0.25" />
+        <entry key="..\:/sem6/theExplorer/app/src/main/res/menu/nav_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
