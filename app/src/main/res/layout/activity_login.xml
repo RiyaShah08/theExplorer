@@ -172,6 +172,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="65dp"
             android:hint="Password"
+            app:passwordToggleEnabled="true"
             android:textColorHint="@color/desc_txt"
             android:inputType="textPassword"
             android:fontFamily="@font/roboto_rgl"
@@ -181,16 +182,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
         </com.google.android.material.textfield.TextInputEditText>
-
-        <ImageView
-            android:layout_width="18dp"
-            android:layout_height="18dp"
-            android:layout_marginTop="15.1dp"
-            android:layout_marginBottom="12dp"
-            android:layout_marginStart="255dp"
-            android:src="@drawable/eye"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
 
     </com.google.android.material.card.MaterialCardView>
 

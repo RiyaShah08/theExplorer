@@ -8,17 +8,17 @@
     android:background="@color/screenbg">
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/aboutus"
         android:layout_width="21dp"
         android:layout_height="20dp"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="37dp"
-        android:backgroundTint="@color/black"
-        android:foregroundTint="@color/black"
+        android:backgroundTint="@color/txtcolor"
+        android:foregroundTint="@color/txtcolor"
         android:outlineAmbientShadowColor="@color/black"
         android:outlineSpotShadowColor="@color/black"
         android:src="@drawable/arrow"
-        android:tint="@color/black"
+        android:tint="@color/txtcolor"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UseAppTint" />
@@ -30,11 +30,11 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="40dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Contact Us"
+        android:text="About Us"
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/aboutus"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
@@ -62,6 +62,9 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="34dp"
+        android:textColorHint="@color/txtcolor"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
         android:text="The explorer - The travel and  guide app.\n
         “Travel is the main thing you purchase that makes you more extravagant”. travel dreams that make you perpetually rich constantly. We have been moving excellent encounters for a considerable length of time through our cutting edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.
         \n\nPrivacy policy

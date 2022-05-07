@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenbg"
+    tools:context=".profile">
+
+    <ImageView
+        android:id="@+id/profile"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="@color/txtcolor"
+        android:foregroundTint="@color/txtcolor"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:src="@drawable/arrow"
+        android:tint="@color/txtcolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseAppTint" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bs5"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginTop="170dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="81dp"
+            android:text="Capstone Project"
+            android:textSize="22dp"
+            android:shadowColor="@color/txtcolor"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/txtcolor"
+            android:layout_gravity="center|top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="285dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="160dp"
+            app:cardBackgroundColor="@color/opacity"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center|top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="17dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center|left"
+                android:fontFamily="@font/roboto_mid"
+                android:textSize="16dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="285dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="230dp"
+            app:cardBackgroundColor="@color/opacity"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center|top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailid_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Email ID"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="17dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center|left"
+                android:fontFamily="@font/roboto_mid"
+                android:textSize="16dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_change"
+            android:layout_width="285dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="390dp"
+            app:cardBackgroundColor="#23545C"
+            app:cardCornerRadius="10dp"
+            android:layout_gravity="center|top"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Change"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_mid"
+                android:textSize="20dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/changepass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_marginTop="303dp"
+            android:background="@color/white"
+            android:textColor="@color/txtcolor"
+            android:layout_gravity="center|top"
+            android:fontFamily="@font/roboto_mid"
+            android:textSize="16dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="91dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="61dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/header_background" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

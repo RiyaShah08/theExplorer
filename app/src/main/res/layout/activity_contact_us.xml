@@ -8,7 +8,7 @@
     tools:context=".contact_us">
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/contact"
         android:layout_width="21dp"
         android:layout_height="20dp"
         android:layout_marginLeft="32dp"
@@ -34,7 +34,7 @@
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView26"
+        app:layout_constraintStart_toEndOf="@+id/contact"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView

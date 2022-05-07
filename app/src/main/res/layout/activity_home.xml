@@ -841,6 +841,7 @@
                     #image1
 
                     <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/nearby"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginEnd="19dp"
@@ -1946,7 +1947,7 @@
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+        android:id="@+id/nav_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:outlineSpotShadowColor="@color/txtcolor"
@@ -1961,19 +1962,22 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:background="@drawable/add"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+<!--    <ImageView-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:background="@drawable/add"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        app:itemIconTint="@color/txtcolor"
+        app:itemTextColor="@color/txtcolor"
+        android:backgroundTint="@color/white"
         android:id="@+id/navView"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"

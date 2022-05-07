@@ -12,7 +12,7 @@
         android:orientation="vertical">
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/raw_image"
+
         android:layout_width="144dp"
         android:layout_height="185dp"
         android:background="@color/grey_desc"
@@ -23,6 +23,7 @@
         app:strokeColor="@color/desc_txt">
 
         <ImageView
+            android:id="@+id/raw_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/grey_desc"

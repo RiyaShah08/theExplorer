@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
         <item
-            android:id="@+id/page_1"
+            android:id="@+id/main_nav"
             android:enabled="true"
             android:icon="@drawable/home"
             android:title="HOME" />
 
         <item
-            android:id="@+id/page_2"
+            android:id="@+id/loc"
             android:enabled="true"
             android:icon="@drawable/post"
             android:title="LOCATION" />
@@ -19,13 +19,13 @@
 <!--            android:title="ADD" />-->
 
         <item
-            android:id="@+id/page_4"
+            android:id="@+id/post_nav"
             android:enabled="true"
             android:icon="@drawable/location_share"
             android:title="POST" />
 
         <item
-            android:id="@+id/page_5"
+            android:id="@+id/user_profile"
             android:enabled="true"
             android:icon="@drawable/person_pro"
             android:title="USER" />
