@@ -34,12 +34,12 @@ class recycle_blue : AppCompatActivity() {
         setContentView(R.layout.activity_recycle_blue)
 
         useRecyclerView = findViewById(R.id.raw_image)
+        //useRecyclerView = findViewById(R.id.raw_image1)
         useRecyclerView.layoutManager = LinearLayoutManager(this)
         useRecyclerView.setHasFixedSize(true)
 
         useArrayList = arrayListOf<realtime_fetch>()
         getUserData()
-
 
 //        raw_image.setOnClickListener {
 //            Intent(Intent.ACTION_GET_CONTENT).also {

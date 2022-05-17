@@ -35,7 +35,6 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
         holder.placedis.text = currentitem.placedis
     }
 
-
     override fun getItemCount(): Int {
         return userList.size
     }

@@ -4,6 +4,7 @@ import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
@@ -57,10 +58,12 @@ class Home : AppCompatActivity() {
                     startActivity(intent)}
                 R.id.location -> {val intent = Intent(this, map_activity::class.java)
                     startActivity(intent)}
-                R.id.Bluespot -> {val intent = Intent(this, bluespot_main::class.java)
+                R.id.Bluespot -> {val intent = Intent(this, recycle_blue::class.java)
                     startActivity(intent)}
-                R.id.addpost -> {val intent = Intent(this, bluespot_main::class.java)
-                    startActivity(intent)}
+                R.id.addpost -> {
+                    val openURL = Intent(android.content.Intent.ACTION_VIEW)
+                    openURL.data = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeM6xeTLM95yyz_BZ0zb8rfMAjgPsJFJojC2WTEX2jqnc14OQ/viewform?usp=sf_link")
+                    startActivity(openURL)}
 //                R.id.Feedback -> {val intent = Intent(this, ::class.java)
 //                    startActivity(intent)}
                 R.id.contact -> {val intent = Intent(this, contact_us::class.java)
@@ -73,7 +76,7 @@ class Home : AppCompatActivity() {
             true
         }
 
-        val SEARCH = findViewById(R.id.Location) as CardView
+        val SEARCH = findViewById(R.id.location) as CardView
         SEARCH.setOnClickListener {
             val intent = Intent(this, map_activity::class.java)
             startActivity(intent)
@@ -105,7 +108,7 @@ class Home : AppCompatActivity() {
 
         val bluespot = findViewById(R.id.image1) as ImageView
         bluespot.setOnClickListener {
-            val intent = Intent(this, bluespot_main::class.java)
+            val intent = Intent(this, recycle_blue::class.java)
             startActivity(intent)
         }
         val bottomNavigation: BottomNavigationView = findViewById(R.id.nav_bar)

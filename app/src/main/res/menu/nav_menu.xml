@@ -19,7 +19,7 @@
         android:id="@+id/location"
         android:enabled="true"
         android:iconTint="@color/txtcolor"
-        android:icon="@drawable/location"
+        android:icon="@drawable/location_photo"
         android:title="Location" />
 
     <item

@@ -103,7 +103,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView"
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -165,7 +165,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView1"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -224,7 +224,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView6"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -288,7 +288,7 @@
                 android:layout_marginTop="27dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView5"
                 app:layout_constraintTop_toBottomOf="@+id/materialCardView5" />
 
@@ -346,7 +346,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -409,7 +409,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView7"
                 app:layout_constraintTop_toBottomOf="@id/textView14" />
 
@@ -467,7 +467,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -530,7 +530,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
@@ -588,7 +588,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView18"
                 app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
@@ -651,7 +651,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
@@ -709,7 +709,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView22"
                 app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
@@ -772,7 +772,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView13"
                 app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -830,7 +830,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView26"
                 app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
@@ -893,7 +893,7 @@
                 android:layout_marginStart="3dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/materialCardView15"
                 app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -951,7 +951,7 @@
                 android:layout_height="22dp"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt"
-                android:src="@drawable/location"
+                android:src="@drawable/location_photo"
                 app:layout_constraintStart_toStartOf="@+id/textView30"
                 app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
