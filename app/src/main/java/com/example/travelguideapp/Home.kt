@@ -168,11 +168,11 @@ class Home : AppCompatActivity() {
                 startActivity(intent)
             }
             R.id.loc -> {
-                val intent = Intent(this, map_activity::class.java)
+                val intent = Intent(this, discover_beauty::class.java)
                 startActivity(intent)
             }
             R.id.post_nav -> {
-                val intent = Intent(this, discover_beauty::class.java)
+                val intent = Intent(this, map_activity::class.java)
                 startActivity(intent)
             }
             R.id.user_profile -> {
