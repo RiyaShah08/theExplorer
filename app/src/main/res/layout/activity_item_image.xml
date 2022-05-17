@@ -16,7 +16,6 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="144dp"
             android:layout_height="185dp"
-            android:background="@color/grey_desc"
             app:cardBackgroundColor="@color/screenbg"
             app:cardCornerRadius="25dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +26,6 @@
                 android:id="@+id/raw_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/grey_desc"
                 android:outlineAmbientShadowColor="@color/desc_txt"
                 android:outlineSpotShadowColor="@color/desc_txt" />
 
@@ -66,69 +64,69 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="130dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="MissingConstraints">-->
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="144dp"
-            android:layout_height="185dp"
-            android:layout_marginStart="50dp"
-            android:background="@color/grey_desc"
-            app:cardBackgroundColor="@color/screenbg"
-            app:cardCornerRadius="25dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:strokeColor="@color/desc_txt">
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="144dp"-->
+<!--            android:layout_height="185dp"-->
+<!--            android:layout_marginStart="50dp"-->
+<!--            android:background="@color/grey_desc"-->
+<!--            app:cardBackgroundColor="@color/screenbg"-->
+<!--            app:cardCornerRadius="25dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:strokeColor="@color/desc_txt">-->
 
-            <ImageView
-                android:id="@+id/raw_image1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/grey_desc"
-                android:outlineAmbientShadowColor="@color/desc_txt"
-                android:outlineSpotShadowColor="@color/desc_txt"
-                tools:ignore="DuplicateIds" />
+<!--            <ImageView-->
+<!--                android:id="@+id/raw_image1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:background="@color/grey_desc"-->
+<!--                android:outlineAmbientShadowColor="@color/desc_txt"-->
+<!--                android:outlineSpotShadowColor="@color/desc_txt"-->
+<!--                tools:ignore="DuplicateIds" />-->
 
-        </com.google.android.material.card.MaterialCardView>
+<!--        </com.google.android.material.card.MaterialCardView>-->
 
-        <TextView
-            android:id="@+id/placename1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/raw_image1"
-            android:fontFamily="@font/roboto_black"
-            android:textColor="@color/black"
-            android:textSize="17dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/raw_image1" />
+<!--        <TextView-->
+<!--            android:id="@+id/placename1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/raw_image1"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="17dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/raw_image1" />-->
 
-        <!--        <TextView-->
-        <!--            android:id="@+id/placecoo"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_below="@+id/textView"-->
-        <!--            android:fontFamily="@font/roboto_black"-->
-        <!--            android:gravity="center"-->
-        <!--            android:textColor="@color/desc_txt"-->
-        <!--            android:textSize="15dp" />-->
+<!--        &lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:id="@+id/placecoo"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:layout_below="@+id/textView"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:fontFamily="@font/roboto_black"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textColor="@color/desc_txt"&ndash;&gt;-->
+<!--        &lt;!&ndash;            android:textSize="15dp" />&ndash;&gt;-->
 
-        <TextView
-            android:id="@+id/placedis1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView"
-            android:fontFamily="@font/roboto_black"
-            android:gravity="center"
-            android:textColor="@color/desc_txt"
-            android:textSize="15dp" />
+<!--        <TextView-->
+<!--            android:id="@+id/placedis1"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/textView"-->
+<!--            android:fontFamily="@font/roboto_black"-->
+<!--            android:gravity="center"-->
+<!--            android:textColor="@color/desc_txt"-->
+<!--            android:textSize="15dp" />-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -102,8 +102,16 @@
         </activity>
 
         <meta-data
+            android:name="com.google.android.gns.version"
+            android:value="12451000" />
+
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+
+        <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAbPHEjLxWuToxlWUWB30EZSrEbRFlsCLc" />
+            android:value="AIzaSyC6sbhu-WIPpG1R_yjW83LEVz7YzzYSG0k" />
+
     </application>
 
 </manifest>
