@@ -4,12 +4,14 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/screenbg</item>
         <item name="colorPrimaryVariant">@color/white</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <item name="android:textColorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/txtcolor</item>
+        <item name="android:textColorPrimary">@color/txtcolor</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/white</item>
-        <item name="colorSecondaryVariant">@color/white</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/txtcolor</item>
+        <item name="colorSecondaryVariant">@color/txtcolor</item>
+        <item name="colorOnSecondary">@color/txtcolor</item>
+
+        <item name="android:tint">@color/txtcolor</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

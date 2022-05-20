@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import kotlinx.android.synthetic.main.activity_about_us.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_recycle_blue.*
 
@@ -34,7 +35,6 @@ class recycle_blue : AppCompatActivity() {
         setContentView(R.layout.activity_recycle_blue)
 
         useRecyclerView = findViewById(R.id.raw_image)
-        //useRecyclerView = findViewById(R.id.raw_image1)
         useRecyclerView.layoutManager = LinearLayoutManager(this)
         useRecyclerView.setHasFixedSize(true)
 
@@ -50,7 +50,7 @@ class recycle_blue : AppCompatActivity() {
     }
 
     private fun getUserData() {
-        dref = FirebaseDatabase.getInstance().getReference("category")
+        dref = FirebaseDatabase.getInstance().reference.child("category")
 
         dref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -66,7 +66,7 @@ class recycle_blue : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-
+                //Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
             }
         })
     }

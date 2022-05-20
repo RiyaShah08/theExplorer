@@ -2,14 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.Travelguideapp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/screenbg</item>
         <item name="colorPrimaryVariant">@color/screenbg</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/txtcolor</item>
 
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/white</item>
-        <item name="colorSecondaryVariant">@color/white</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/screenbg</item>
+        <item name="colorSecondaryVariant">@color/txtcolor</item>
+        <item name="colorOnSecondary">@color/txtcolor</item>
+        <item name="android:textColor">@color/txtcolor</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->

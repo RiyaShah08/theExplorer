@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawerlayout"
-    android:background="@color/screenbg"
+    android:background="#F2F5F1"
     tools:context=".Home">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -96,15 +96,15 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-                    <TextView
+                    <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="61dp"
-                        android:layout_marginTop="8.2dp"
-                        android:fontFamily="@font/roboto_rgl"
-                        android:text="Discover"
-                        android:textColor="#9A9A9A"
+                        android:hint="Discover"
                         android:textSize="16dp"
+                        android:textColorHint="@color/desc_txt"
+                        android:fontFamily="@font/roboto_rgl"
+                        android:textColor="@color/desc_txt"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.cardview.widget.CardView>

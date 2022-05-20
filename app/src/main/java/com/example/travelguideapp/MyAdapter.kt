@@ -30,7 +30,7 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
         Glide
             .with(holder.context)
             .load(internetUrl)
-            .into(holder.image)
+            .into(holder.imageURL)
         holder.placename.text = currentitem.placename
         holder.placedis.text = currentitem.placedis
     }
@@ -41,8 +41,9 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
 
     class MyViewHolder(itemView: View, val context: Context) : RecyclerView.ViewHolder(itemView){
 
-        val image: ImageView = itemView.findViewById(R.id.raw_image)
+        val imageURL: ImageView = itemView.findViewById(R.id.raw_image)
         val placename : TextView = itemView.findViewById(R.id.placename)
         val placedis : TextView = itemView.findViewById(R.id.placedis)
+
     }
 }

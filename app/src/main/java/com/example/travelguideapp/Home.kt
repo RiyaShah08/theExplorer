@@ -3,19 +3,17 @@ package com.example.travelguideapp
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.location.Location
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
+import android.text.Spanned
 import android.util.Log
 import android.view.MenuItem
-import android.widget.HorizontalScrollView
-import android.widget.ImageView
-import android.widget.ScrollView
-import android.widget.TextView
 import androidx.constraintlayout.motion.widget.Debug.getLocation
-import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
@@ -31,7 +29,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_profile.*
-
+import android.graphics.drawable.ColorDrawable
+import android.widget.*
 
 class Home : AppCompatActivity() {
 
@@ -47,7 +46,10 @@ class Home : AppCompatActivity() {
         toggle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setTitle(Html.fromHtml("<font color=\"green\">"+ getString(R.string.app_name) + "</font>"))
+        supportActionBar?.setTitle(Html.fromHtml("<font color=\"white\">"+ getString(R.string.app_name) + "</font>"))
+
+        val colorDrawable = ColorDrawable(Color.parseColor("#23545C"))
+        supportActionBar?.setBackgroundDrawable(colorDrawable)
 
         val navView = findViewById<NavigationView>(R.id.navView)
         navView.setNavigationItemSelectedListener {
@@ -76,7 +78,7 @@ class Home : AppCompatActivity() {
             true
         }
 
-        val SEARCH = findViewById(R.id.location) as CardView
+        val SEARCH = findViewById(R.id.location) as EditText
         SEARCH.setOnClickListener {
             val intent = Intent(this, map_activity::class.java)
             startActivity(intent)
@@ -189,4 +191,15 @@ class Home : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+}
+
+private fun ActionBar?.setIcon(fromHtml: Spanned?) {
+    TODO("Not yet implemented")
+}
+
+private fun DrawerLayout.setBackgroundColor(s: String) {
+
+}
+
+private fun ActionBar?.setBackgroundDrawable(fromHtml: Spanned?) {
 }
