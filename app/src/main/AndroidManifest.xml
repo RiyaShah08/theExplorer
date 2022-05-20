@@ -14,15 +14,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Travelguideapp">
-
+        <activity
+            android:name=".webview2"
+            android:exported="false" />
+        <activity
+            android:name=".webview3"
+            android:exported="false" />
+        <activity
+            android:name=".webview1"
+            android:exported="false" />
+        <activity
+            android:name=".webview"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
         <activity
             android:name=".profile"
             android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar"/>
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".about_us"
             android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar"/>
+            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".contact_us"
             android:exported="false"
@@ -106,13 +118,13 @@
             android:name="com.google.android.gns.version"
             android:value="12451000" />
 
-        <uses-library android:name="org.apache.http.legacy"
-            android:required="false"/>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyC6sbhu-WIPpG1R_yjW83LEVz7YzzYSG0k" />
-
     </application>
 
 </manifest>

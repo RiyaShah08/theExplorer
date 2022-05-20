@@ -18,12 +18,14 @@
             android:layout_width="362dp"
             android:layout_height="match_parent"
             android:orientation="horizontal"
+            android:fillViewport="true"
+            android:paddingBottom="60dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="362dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <!--            #burger-->
@@ -97,6 +99,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <EditText
+                        android:id="@+id/discover"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="61dp"
@@ -1291,6 +1294,7 @@
 
 
                             <ImageView
+                                android:id="@+id/add1"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/ad1"
@@ -1328,6 +1332,7 @@
 
 
                             <ImageView
+                                android:id="@+id/add2"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/ad2"
@@ -1364,6 +1369,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/add3"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/ad3"
@@ -1400,6 +1406,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/add4"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:src="@drawable/ad4"
@@ -1951,24 +1958,23 @@
 
         </ScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:outlineSpotShadowColor="@color/txtcolor"
-        android:outlineAmbientShadowColor="@color/txtcolor"
-        app:itemRippleColor="@color/txtcolor"
-        app:itemIconSize="24dp"
-        app:menu="@menu/bottom_navigation_menu"
-        android:elevation="5dp"
-        android:background="#F7F7F7"
-        app:itemIconTint="@color/txtcolor"
-        app:itemTextColor="@color/txtcolor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F7F7"
+            android:elevation="5dp"
+            android:outlineAmbientShadowColor="@color/txtcolor"
+            android:outlineSpotShadowColor="@color/txtcolor"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/txtcolor"
+            app:itemRippleColor="@color/txtcolor"
+            app:itemTextColor="@color/txtcolor"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+            app:menu="@menu/bottom_navigation_menu"
+            tools:ignore="MissingConstraints">
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 <!--    <ImageView-->
 <!--        android:layout_width="60dp"-->
