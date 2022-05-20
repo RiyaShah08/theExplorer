@@ -78,7 +78,7 @@ class Home : AppCompatActivity() {
             true
         }
 
-        val SEARCH = findViewById(R.id.location) as EditText
+        val SEARCH = findViewById(R.id.discover) as EditText
         SEARCH.setOnClickListener {
             val intent = Intent(this, map_activity::class.java)
             startActivity(intent)
@@ -113,6 +113,35 @@ class Home : AppCompatActivity() {
             val intent = Intent(this, recycle_blue::class.java)
             startActivity(intent)
         }
+
+        val ap1 = findViewById(R.id.add1) as ImageView
+        ap1.setOnClickListener {
+            val intent = Intent(this, webview::class.java)
+//            val url = "https://invinciblengo.org/"
+//            val intent = Intent(Intent.ACTION_VIEW)
+//            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
+
+        val ap2 = findViewById(R.id.add2) as ImageView
+        ap2.setOnClickListener {
+            val intent = Intent(this, webview1::class.java)
+            startActivity(intent)
+        }
+
+        val ap3 = findViewById(R.id.add3) as ImageView
+        ap3.setOnClickListener {
+            val intent = Intent(this, webview2::class.java)
+            startActivity(intent)
+        }
+
+        val ap4 = findViewById(R.id.add4) as ImageView
+        ap4.setOnClickListener {
+            val intent = Intent(this, webview3::class.java)
+            startActivity(intent)
+        }
+
+
         val bottomNavigation: BottomNavigationView = findViewById(R.id.nav_bar)
         bottomNavigation.setOnNavigationItemSelectedListener(OnNavigationItemSelectedListener)
 
