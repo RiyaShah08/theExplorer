@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.HorizontalScrollView
+import android.widget.ImageView
 import android.widget.TextView
 
 class discover_beauty : AppCompatActivity() {
@@ -11,8 +12,7 @@ class discover_beauty : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_discover_beauty)
 
-
-        val demo = findViewById(R.id.demo) as TextView
+        val demo = findViewById(R.id.db1) as ImageView
         demo.setOnClickListener {
             val intent = Intent(this, discover_des1::class.java)
             startActivity(intent)

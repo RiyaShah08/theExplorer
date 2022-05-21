@@ -15,7 +15,7 @@ class discover_des1 : AppCompatActivity() {
 
         val card1 = findViewById(R.id.bs4) as CardView
         card1.setOnClickListener {
-            val intent = Intent(this, map_activity::class.java)
+            val intent = Intent(this, googlemap::class.java)
             startActivity(intent)
         }
 
