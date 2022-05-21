@@ -50,7 +50,7 @@ class Home : AppCompatActivity() {
                     startActivity(intent)}
                 R.id.addpost -> {
                     val openURL = Intent(android.content.Intent.ACTION_VIEW)
-                    openURL.data = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeM6xeTLM95yyz_BZ0zb8rfMAjgPsJFJojC2WTEX2jqnc14OQ/viewform?usp=sf_link")
+                    openURL.data = Uri.parse("https://forms.gle/B82n5Ka73HEdVSBB7")
                     startActivity(openURL)}
                         //                R.id.Feedback -> {val intent = Intent(this, ::class.java)
                         //                    startActivity(intent)}
@@ -66,7 +66,7 @@ class Home : AppCompatActivity() {
 
         fab.setOnClickListener{
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeM6xeTLM95yyz_BZ0zb8rfMAjgPsJFJojC2WTEX2jqnc14OQ/viewform?usp=sf_link")
+            openURL.data = Uri.parse("https://forms.gle/B82n5Ka73HEdVSBB7")
             startActivity(openURL)
         }
 
