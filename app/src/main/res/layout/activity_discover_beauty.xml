@@ -492,10 +492,10 @@
 
                         #image1
 
-                        <com.google.android.material.card.MaterialCardView
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="240dp"
                             android:layout_height="240dp"
-                            android:layout_marginEnd="19dp"
+                            android:layout_marginEnd="10dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -538,13 +538,13 @@
                                 android:textSize="17dp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
-                        </com.google.android.material.card.MaterialCardView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                         #image2
 
-                        <com.google.android.material.card.MaterialCardView
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="240dp"
                             android:layout_height="240dp"
-                            android:layout_marginEnd="19dp"
+                            android:layout_marginEnd="10dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -587,13 +587,13 @@
                                 android:textSize="17dp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
-                        </com.google.android.material.card.MaterialCardView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>>
                         #image3
 
-                        <com.google.android.material.card.MaterialCardView
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="240dp"
                             android:layout_height="240dp"
-                            android:layout_marginEnd="19dp"
+                            android:layout_marginEnd="10dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -636,13 +636,13 @@
                                 android:textSize="17dp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
-                        </com.google.android.material.card.MaterialCardView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                         #image4
 
-                        <com.google.android.material.card.MaterialCardView
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="240dp"
                             android:layout_height="240dp"
-                            android:layout_marginEnd="19dp"
+                            android:layout_marginEnd="10dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
@@ -685,13 +685,13 @@
                                 android:textSize="17dp"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent" />
-                        </com.google.android.material.card.MaterialCardView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
                         #image5
 
-                        <com.google.android.material.card.MaterialCardView
+                        <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="240dp"
                             android:layout_height="240dp"
-                            android:layout_marginEnd="19dp"
+                            android:layout_marginEnd="10dp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
