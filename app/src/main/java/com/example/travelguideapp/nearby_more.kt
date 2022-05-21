@@ -14,7 +14,7 @@ class nearby_more : AppCompatActivity() {
 
         val demo1 = findViewById(R.id.demo1) as LinearLayout
         demo1.setOnClickListener {
-            val intent = Intent(this, map_activity::class.java)
+            val intent = Intent(this, googlemap::class.java)
             startActivity(intent)
         }
     }
