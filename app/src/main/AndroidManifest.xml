@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.travelguideapp">
 
+    <uses-permission android:name="com.javapapers.android.googleplacesdetail.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -15,6 +20,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Travelguideapp">
         <activity
+            android:name=".googlemap"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"/>
+        <activity
             android:name=".webview2"
             android:exported="false" />
         <activity
@@ -25,8 +34,7 @@
             android:exported="false" />
         <activity
             android:name=".webview"
-            android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+            android:exported="false" />
         <activity
             android:name=".profile"
             android:exported="false"
@@ -46,7 +54,7 @@
         <activity
             android:name=".discover_beauty"
             android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
         <activity
             android:name=".item_image"
             android:exported="false"
@@ -57,10 +65,6 @@
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity
             android:name=".nearby_more"
-            android:exported="false"
-            android:theme="@style/Theme.MaterialComponents.NoActionBar" />
-        <activity
-            android:name=".map_activity"
             android:exported="false"
             android:theme="@style/Theme.MaterialComponents.NoActionBar" />
         <activity

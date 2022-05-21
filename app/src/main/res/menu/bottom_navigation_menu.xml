@@ -13,11 +13,9 @@
             android:icon="@drawable/post"
             android:title="POST" />
 
-<!--        <item-->
-<!--            android:id="@+id/page_3"-->
-<!--            android:enabled="true"-->
-<!--            android:icon="@drawable/add"-->
-<!--            android:title="ADD" />-->
+        <item
+            android:id="@+id/placeholder"
+            android:title="" />
 
         <item
             android:id="@+id/loc"

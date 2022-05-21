@@ -33,7 +33,7 @@ class bluesplot_desc4 : AppCompatActivity() {
 
         val blue1 = findViewById(R.id.bs5) as CardView
         blue1.setOnClickListener {
-            val intent = Intent(this, map_activity::class.java)
+            val intent = Intent(this, googlemap::class.java)
             startActivity(intent)
         }
     }

@@ -1,30 +1,16 @@
 package com.example.travelguideapp
 
-import android.Manifest
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.graphics.Color
-import android.location.Location
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import android.text.Spanned
-import android.util.Log
 import android.view.MenuItem
-import androidx.constraintlayout.motion.widget.Debug.getLocation
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.ActionBarDrawerToggle
-import androidx.cardview.widget.CardView
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.drawerlayout.widget.DrawerLayout
-import com.example.travelguideapp.profile
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
-import com.google.android.gms.maps.GoogleMap
-import com.google.android.gms.maps.OnMapReadyCallback
-import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
@@ -58,7 +44,7 @@ class Home : AppCompatActivity() {
                     startActivity(intent)}
                 R.id.profile -> {val intent = Intent(this, com.example.travelguideapp.profile::class.java)
                     startActivity(intent)}
-                R.id.location -> {val intent = Intent(this, map_activity::class.java)
+                R.id.location -> {val intent = Intent(this, googlemap::class.java)
                     startActivity(intent)}
                 R.id.Bluespot -> {val intent = Intent(this, recycle_blue::class.java)
                     startActivity(intent)}
@@ -66,8 +52,8 @@ class Home : AppCompatActivity() {
                     val openURL = Intent(android.content.Intent.ACTION_VIEW)
                     openURL.data = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeM6xeTLM95yyz_BZ0zb8rfMAjgPsJFJojC2WTEX2jqnc14OQ/viewform?usp=sf_link")
                     startActivity(openURL)}
-//                R.id.Feedback -> {val intent = Intent(this, ::class.java)
-//                    startActivity(intent)}
+                        //                R.id.Feedback -> {val intent = Intent(this, ::class.java)
+                        //                    startActivity(intent)}
                 R.id.contact -> {val intent = Intent(this, contact_us::class.java)
                     startActivity(intent)}
                 R.id.aboutus -> {val intent = Intent(this, about_us::class.java)
@@ -78,9 +64,15 @@ class Home : AppCompatActivity() {
             true
         }
 
+        fab.setOnClickListener{
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeM6xeTLM95yyz_BZ0zb8rfMAjgPsJFJojC2WTEX2jqnc14OQ/viewform?usp=sf_link")
+            startActivity(openURL)
+        }
+
         val SEARCH = findViewById(R.id.discover) as EditText
         SEARCH.setOnClickListener {
-            val intent = Intent(this, map_activity::class.java)
+            val intent = Intent(this, googlemap::class.java)
             startActivity(intent)
         }
 
@@ -117,9 +109,6 @@ class Home : AppCompatActivity() {
         val ap1 = findViewById(R.id.add1) as ImageView
         ap1.setOnClickListener {
             val intent = Intent(this, webview::class.java)
-//            val url = "https://invinciblengo.org/"
-//            val intent = Intent(Intent.ACTION_VIEW)
-//            intent.data = Uri.parse(url)
             startActivity(intent)
         }
 
@@ -141,10 +130,12 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-        val bottomNavigation: BottomNavigationView = findViewById(R.id.nav_bar)
+        val bottomNavigation: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         bottomNavigation.setOnNavigationItemSelectedListener(OnNavigationItemSelectedListener)
 
+//        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+//        bottomNavigationView.background = null
+//        bottomNavigationView.menu.getItem(2).isEnabled = false
 
 //        title = "KotlinApp"
 //        if (ContextCompat.checkSelfPermission(
@@ -202,8 +193,13 @@ class Home : AppCompatActivity() {
                 val intent = Intent(this, discover_beauty::class.java)
                 startActivity(intent)
             }
+            R.id.placeholder -> {
+//                val openURL = Intent(android.content.Intent.ACTION_VIEW)
+//                openURL.data = Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLSeM6xeTLM95yyz_BZ0zb8rfMAjgPsJFJojC2WTEX2jqnc14OQ/viewform?usp=sf_link")
+//                startActivity(openURL)
+            }
             R.id.loc -> {
-                val intent = Intent(this, map_activity::class.java)
+                val intent = Intent(this, googlemap::class.java)
                 startActivity(intent)
             }
             R.id.user_profile -> {
