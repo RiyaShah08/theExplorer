@@ -3,4 +3,6 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="default_web_client_id_auth">377482358866-q7r5jd901ls6tk5mqovcsd8ld36r4f7u.apps.googleusercontent.com</string>
+    <string name="google_map_key">AIzaSyC6sbhu-WIPpG1R_yjW83LEVz7YzzYSG0k</string>
+    <string name="google_maps_key">AIzaSyC6sbhu-WIPpG1R_yjW83LEVz7YzzYSG0k</string>
 </resources>
