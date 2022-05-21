@@ -28,27 +28,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <!--            #burger-->
-                <!--            <ImageView-->
-                <!--                android:id="@+id/nav_menu"-->
-                <!--                android:layout_width="19.35dp"-->
-                <!--                android:layout_height="12.62dp"-->
-                <!--                android:layout_marginStart="30dp"-->
-                <!--                android:layout_marginTop="45dp"-->
-                <!--                android:src="@drawable/burger"-->
-                <!--                app:layout_constraintStart_toStartOf="parent"-->
-                <!--                app:layout_constraintTop_toTopOf="parent" />-->
-
-                <!--            #profile-->
-                <!--            <ImageView-->
-                <!--                android:layout_width="45dp"-->
-                <!--                android:layout_height="45dp"-->
-                <!--                android:layout_marginStart="288dp"-->
-                <!--                android:layout_marginTop="25dp"-->
-                <!--                android:src="@drawable/profile"-->
-                <!--                app:layout_constraintStart_toStartOf="parent"-->
-                <!--                app:layout_constraintTop_toTopOf="parent" />-->
-
                 <TextView
                     android:id="@+id/textView32"
                     android:layout_width="wrap_content"
