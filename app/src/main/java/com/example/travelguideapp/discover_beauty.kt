@@ -17,5 +17,11 @@ class discover_beauty : AppCompatActivity() {
             val intent = Intent(this, discover_des1::class.java)
             startActivity(intent)
         }
+
+        val back_dc = findViewById(R.id.back_dc) as ImageView
+        back_dc.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
     }
 }

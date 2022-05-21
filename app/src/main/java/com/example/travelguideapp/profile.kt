@@ -16,7 +16,7 @@ class profile : AppCompatActivity() {
         val email = findViewById(R.id.emailid_change) as TextView
         val change = findViewById(R.id.changepass) as TextView
 
-        val profile = findViewById(R.id.profile) as ImageView
+        val profile = findViewById(R.id.profile_main) as ImageView
         profile.setOnClickListener {
             val intent = Intent(this, Home::class.java)
             startActivity(intent)

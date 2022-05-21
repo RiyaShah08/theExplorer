@@ -25,7 +25,7 @@ class discover_des1 : AppCompatActivity() {
             startActivity(intent)
         }
 
-        var bookmark = findViewById(R.id.bookmark3) as CheckBox
+        var bookmark = findViewById(R.id.bookmark_dc) as CheckBox
         bookmark.setOnCheckedChangeListener{ checkBox, isChecked->
 
             if(isChecked){

@@ -7,18 +7,17 @@
     tools:context=".about_us"
     android:background="@color/screenbg">
 
-    <ImageView
+   <ImageView
         android:id="@+id/aboutus"
-        android:layout_width="21dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="37dp"
+        android:layout_width="28dp"
+        android:layout_height="29dp"
+        android:layout_margin="30sp"
         android:backgroundTint="@color/txtcolor"
         android:foregroundTint="@color/txtcolor"
         android:outlineAmbientShadowColor="@color/black"
         android:outlineSpotShadowColor="@color/black"
         android:src="@drawable/arrow"
-        android:tint="@color/txtcolor"
+        android:tint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UseAppTint" />
@@ -28,13 +27,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="40dp"
         android:fontFamily="@font/roboto_bold"
         android:text="About Us"
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/aboutus"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.card.MaterialCardView
@@ -69,9 +67,9 @@
         “Travel is the main thing you purchase that makes you more extravagant”. travel dreams that make you perpetually rich constantly. We have been moving excellent encounters for a considerable length of time through our cutting edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.
         \n\nPrivacy policy
         \nFor read all privacy policy please click on below mentioned link :-
-        \n\nFor more details visit :-"
+        \n\nFor more details visit"
         android:textColor="@color/txtcolor"
-        android:fontFamily="@font/roboto_rgl"
+        android:fontFamily="@font/roboto_bold"
         android:textSize="14dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image" />

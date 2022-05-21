@@ -89,7 +89,7 @@
         android:textColor="@color/black"
         android:shadowColor="@color/black"
         android:buttonTint="@color/black"
-        android:button="@drawable/bookmark_nav"
+        android:button="@drawable/bookmark"
         app:useMaterialThemeColors="true"
         app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/imageView21"

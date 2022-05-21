@@ -41,12 +41,6 @@ class recycle_blue : AppCompatActivity() {
         useArrayList = arrayListOf<realtime_fetch>()
         getUserData()
 
-//        raw_image.setOnClickListener {
-//            Intent(Intent.ACTION_GET_CONTENT).also {
-//                it.type = "users/user1/*"
-//                startActivityForResult(it, REQUEST_CODE_IMAGE_PICK)
-//            }
-//        }
     }
 
     private fun getUserData() {
@@ -73,7 +67,12 @@ class recycle_blue : AppCompatActivity() {
 }
 
 
-//
+//        raw_image.setOnClickListener {
+//            Intent(Intent.ACTION_GET_CONTENT).also {
+//                it.type = "users/user1/*"
+//                startActivityForResult(it, REQUEST_CODE_IMAGE_PICK)
+//            }
+//        }
 //        // below line is used to get the instance of our Firebase database.
 //        firebaseDatabase = FirebaseDatabase.getInstance()
 //
