@@ -16,7 +16,7 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.activity_item_image,
-        parent, false)
+            parent, false)
 
         return MyViewHolder(itemView,parent.context)
     }
@@ -25,12 +25,18 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
 
         val currentitem = userList[position]
         //val targetImageView = findViewById(R.id.imageView) as ImageView
-        val internetUrl = "https://firebasestorage.googleapis.com/v0/b/travelguideapp-c22a1.appspot.com/o/images%2Fnew1.png?alt=media&token=2ef389d0-cf30-4952-a199-9c1f53b6d4bb"
+        val internetUrl = currentitem.imageURL
+
+        println(internetUrl)
 
         Glide
             .with(holder.context)
             .load(internetUrl)
-            .into(holder.imageURL)
+            .into(holder.image)
+        var coo = currentitem.placecoo
+        println("////////////////////////////////")
+        println(coo)
+        println("////////////////////////////////")
         holder.placename.text = currentitem.placename
         holder.placedis.text = currentitem.placedis
     }
@@ -41,9 +47,8 @@ class MyAdapter(private val userList: ArrayList<realtime_fetch> ) : RecyclerView
 
     class MyViewHolder(itemView: View, val context: Context) : RecyclerView.ViewHolder(itemView){
 
-        val imageURL: ImageView = itemView.findViewById(R.id.raw_image)
+        val image: ImageView = itemView.findViewById(R.id.raw_image)
         val placename : TextView = itemView.findViewById(R.id.placename)
         val placedis : TextView = itemView.findViewById(R.id.placedis)
-
     }
 }

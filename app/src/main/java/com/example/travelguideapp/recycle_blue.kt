@@ -35,16 +35,23 @@ class recycle_blue : AppCompatActivity() {
         setContentView(R.layout.activity_recycle_blue)
 
         useRecyclerView = findViewById(R.id.raw_image)
+        //useRecyclerView = findViewById(R.id.raw_image1)
         useRecyclerView.layoutManager = LinearLayoutManager(this)
         useRecyclerView.setHasFixedSize(true)
 
         useArrayList = arrayListOf<realtime_fetch>()
         getUserData()
 
+//        raw_image.setOnClickListener {
+//            Intent(Intent.ACTION_GET_CONTENT).also {
+//                it.type = "users/user1/*"
+//                startActivityForResult(it, REQUEST_CODE_IMAGE_PICK)
+//            }
+//        }
     }
 
     private fun getUserData() {
-        dref = FirebaseDatabase.getInstance().reference.child("category")
+        dref = FirebaseDatabase.getInstance().getReference("category")
 
         dref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -60,19 +67,14 @@ class recycle_blue : AppCompatActivity() {
             }
 
             override fun onCancelled(error: DatabaseError) {
-                //Toast.makeText(this, error.message, Toast.LENGTH_SHORT).show()
+
             }
         })
     }
 }
 
 
-//        raw_image.setOnClickListener {
-//            Intent(Intent.ACTION_GET_CONTENT).also {
-//                it.type = "users/user1/*"
-//                startActivityForResult(it, REQUEST_CODE_IMAGE_PICK)
-//            }
-//        }
+//
 //        // below line is used to get the instance of our Firebase database.
 //        firebaseDatabase = FirebaseDatabase.getInstance()
 //

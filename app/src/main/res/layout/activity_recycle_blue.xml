@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/screenbg"
+    android:background="@color/white"
     tools:context=".recycle_blue">
 
     <ImageView
@@ -43,10 +43,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="25dp"
-        android:scrollbars="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2">
@@ -60,6 +59,7 @@
             tools:listitem="@layout/activity_item_image">
 
         </androidx.recyclerview.widget.RecyclerView>
+
 
         <!--        <com.google.android.material.card.MaterialCardView-->
         <!--            android:id="@+id/materialCardView"-->
