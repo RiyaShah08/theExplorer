@@ -40,7 +40,7 @@ import java.util.List;
 public class googlemap extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener
 {
     private GoogleMap mMap;
-    private GoogleApiClient client;
+    public GoogleApiClient client;
     private LocationRequest locationRequest;
     private Location lastlocation;
     private Marker currentLocationmMarker;
@@ -102,13 +102,12 @@ public class googlemap extends FragmentActivity implements OnMapReadyCallback, G
     }
 
 
-    protected synchronized void bulidGoogleApiClient() {
+    public synchronized void bulidGoogleApiClient() {
         client = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener(this)
                 .addApi(LocationServices.API).build();
         client.connect();
-
     }
 
     @Override
