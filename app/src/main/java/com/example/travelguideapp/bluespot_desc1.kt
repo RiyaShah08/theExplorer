@@ -27,7 +27,7 @@ class bluespot_desc1 : AppCompatActivity() {
 
         val txt2 = findViewById(R.id.back2) as ImageView
         txt2.setOnClickListener {
-            val intent = Intent(this, bluespot_main::class.java)
+            val intent = Intent(this, recycle_blue::class.java)
             startActivity(intent)
         }
 

@@ -27,7 +27,7 @@ class bluesplot_desc4 : AppCompatActivity() {
 
         val txt5 = findViewById(R.id.back5) as ImageView
         txt5.setOnClickListener {
-            val intent = Intent(this, bluespot_main::class.java)
+            val intent = Intent(this, recycle_blue::class.java)
             startActivity(intent)
         }
 
