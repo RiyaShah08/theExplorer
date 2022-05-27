@@ -17,6 +17,7 @@ import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_profile.*
 import android.graphics.drawable.ColorDrawable
 import android.widget.*
+import androidx.cardview.widget.CardView
 
 class Home : AppCompatActivity() {
 
@@ -70,7 +71,7 @@ class Home : AppCompatActivity() {
             startActivity(openURL)
         }
 
-        val SEARCH = findViewById(R.id.discover) as EditText
+        val SEARCH = findViewById(R.id.location) as CardView
         SEARCH.setOnClickListener {
             val intent = Intent(this, googlemap::class.java)
             startActivity(intent)
