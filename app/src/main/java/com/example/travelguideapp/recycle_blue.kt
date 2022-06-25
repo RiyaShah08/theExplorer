@@ -80,8 +80,6 @@ class recycle_blue : AppCompatActivity() {
     }
 }
 
-
-//
 //        // below line is used to get the instance of our Firebase database.
 //        firebaseDatabase = FirebaseDatabase.getInstance()
 //
