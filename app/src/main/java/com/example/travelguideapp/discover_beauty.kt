@@ -268,7 +268,7 @@ class discover_beauty : AppCompatActivity() {
         //_______________________________________________________**__________________________________________________________
         db36.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            openURL.data = Uri.parse("https://cutt.ly/sKYRkWl")
             startActivity(openURL)
         }
 
