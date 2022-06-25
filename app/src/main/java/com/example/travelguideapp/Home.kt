@@ -98,7 +98,49 @@ class Home : AppCompatActivity() {
 
         near1.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/0KYl8Mw")
+            openURL.data = Uri.parse("https://cutt.ly/uKYzWes")
+            startActivity(openURL)
+        }
+
+        near2.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/fKYk648")
+            startActivity(openURL)
+        }
+
+        near3.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/FKYzYnJ")
+            startActivity(openURL)
+        }
+
+        near4.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/XKYzPO9")
+            startActivity(openURL)
+        }
+
+        near5.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/EKYzDXR")
+            startActivity(openURL)
+        }
+
+        near6.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/HKYzLbz")
+            startActivity(openURL)
+        }
+
+        near7.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/hKYzCGq")
+            startActivity(openURL)
+        }
+
+        near8.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/HKYz0Kv")
             startActivity(openURL)
         }
 

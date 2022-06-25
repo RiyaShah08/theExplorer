@@ -1,6 +1,7 @@
 package com.example.travelguideapp
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import android.widget.Toast
 import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.ktx.Firebase
@@ -41,6 +43,11 @@ class recycle_blue : AppCompatActivity() {
 
         useArrayList = arrayListOf<realtime_fetch>()
         getUserData()
+
+        blueback.setOnClickListener {
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+        }
 
 //        raw_image.setOnClickListener {
 //            Intent(Intent.ACTION_GET_CONTENT).also {

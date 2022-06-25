@@ -872,7 +872,6 @@
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
-
                             <ImageView
                                 android:layout_width="184dp"
                                 android:layout_height="132dp"
@@ -893,6 +892,7 @@
 
 
                             <ImageView
+                                android:id="@+id/near2"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -942,8 +942,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
-
                             <ImageView
+                                android:id="@+id/near3"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -993,8 +993,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
-
                             <ImageView
+                                android:id="@+id/near4"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -1046,6 +1046,7 @@
 
 
                             <ImageView
+                                android:id="@+id/near5"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -1097,6 +1098,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/near6"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -1147,8 +1149,8 @@
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent">
 
-
                             <ImageView
+                                android:id="@+id/near7"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -1199,6 +1201,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/near8"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"

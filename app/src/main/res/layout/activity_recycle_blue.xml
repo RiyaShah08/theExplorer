@@ -8,6 +8,7 @@
     tools:context=".recycle_blue">
 
     <ImageView
+        android:id="@+id/blueback"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_margin="25dp"
