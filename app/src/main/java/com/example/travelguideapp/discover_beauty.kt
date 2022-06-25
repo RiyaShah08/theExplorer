@@ -136,45 +136,165 @@ class discover_beauty : AppCompatActivity() {
             startActivity(openURL)
         }
 
-
         //______________________________________________________**___________________________________________________
-        db14.setOnClickListener {
+        db15.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/zKYvIN2")
+            openURL.data = Uri.parse("https://cutt.ly/uKYbOQC")
             startActivity(openURL)
         }
 
-        db14.setOnClickListener {
+        db16.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/zKYvIN2")
+            openURL.data = Uri.parse("https://cutt.ly/mKYbA8m")
             startActivity(openURL)
         }
 
-        db14.setOnClickListener {
+        db17.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/zKYvIN2")
+            openURL.data = Uri.parse("https://cutt.ly/bKYbJ8u")
             startActivity(openURL)
         }
 
-        db14.setOnClickListener {
+        db18.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/zKYvIN2")
+            openURL.data = Uri.parse("https://cutt.ly/XKYbXQT")
             startActivity(openURL)
         }
 
-        db14.setOnClickListener {
+        db19.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/zKYvIN2")
+            openURL.data = Uri.parse("https://cutt.ly/5KYbBZ4")
             startActivity(openURL)
         }
 
-        db14.setOnClickListener {
+        db20.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/zKYvIN2")
+            openURL.data = Uri.parse("https://cutt.ly/zKYb1Gq")
             startActivity(openURL)
         }
 
+        db21.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYb9Lt")
+            startActivity(openURL)
+        }
 
+        //__________________________________________________**______________________________________________
+        db22.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/0KYnCc5")
+            startActivity(openURL)
+        }
+
+        db23.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/uKYnBMS")
+            startActivity(openURL)
+        }
+
+        db24.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/wKYnMR0")
+            startActivity(openURL)
+        }
+
+        db25.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/pKYn18o")
+            startActivity(openURL)
+        }
+
+        db26.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/rKYn9hx")
+            startActivity(openURL)
+        }
+
+        db27.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/rKYn8vo")
+            startActivity(openURL)
+        }
+
+        db28.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/pKYn5Du")
+            startActivity(openURL)
+        }
+
+        //_____________________________________________**__________________________________________
+        db29.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/8KYEVB3")
+            startActivity(openURL)
+        }
+
+        db30.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            startActivity(openURL)
+        }
+
+        db31.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/zKYE8TL")
+            startActivity(openURL)
+        }
+
+        db32.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/EKYE7My")
+            startActivity(openURL)
+        }
+
+        db33.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/OKYRqhG")
+            startActivity(openURL)
+        }
+
+        db34.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/WKYRthB")
+            startActivity(openURL)
+        }
+
+        db35.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/6KYRuFu")
+            startActivity(openURL)
+        }
+
+        //_______________________________________________________**__________________________________________________________
+        db36.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            startActivity(openURL)
+        }
+
+        db37.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            startActivity(openURL)
+        }
+
+        db38.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            startActivity(openURL)
+        }
+
+        db39.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            startActivity(openURL)
+        }
+
+        db40.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/PKYE1fe")
+            startActivity(openURL)
+        }
 
 
         val back_dc = findViewById(R.id.back_dc) as ImageView

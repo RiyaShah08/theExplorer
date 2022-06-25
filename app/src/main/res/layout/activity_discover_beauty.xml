@@ -1512,7 +1512,7 @@
                                     android:layout_marginStart="14dp"
                                     android:layout_marginTop="175dp"
                                     android:fontFamily="@font/roboto_bold"
-                                    android:text="-----"
+                                    android:text="Colorado"
                                     android:textColor="@color/white"
                                     android:textSize="17dp"
                                     app:layout_constraintStart_toStartOf="parent"
@@ -2070,6 +2070,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db29"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_1"
@@ -2119,6 +2120,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db30"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_2"
@@ -2168,6 +2170,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db31"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_3"
@@ -2217,6 +2220,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db32"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_4"
@@ -2266,6 +2270,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db33"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_5"
@@ -2315,6 +2320,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db34"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_6"
@@ -2364,6 +2370,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db35"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l5_7"
@@ -2458,6 +2465,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db36"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_1"
@@ -2507,6 +2515,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db37"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_2"
@@ -2556,6 +2565,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db38"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_3"
@@ -2605,6 +2615,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db39"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_4"
@@ -2654,6 +2665,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db40"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_5"
@@ -2703,6 +2715,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db41"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_6"
@@ -2752,6 +2765,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db42"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l6_7"
