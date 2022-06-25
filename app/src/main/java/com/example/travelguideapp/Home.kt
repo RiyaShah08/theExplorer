@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_profile.*
 import android.graphics.drawable.ColorDrawable
 import android.widget.*
 import androidx.cardview.widget.CardView
+import kotlinx.android.synthetic.main.activity_discover_beauty.*
 
 class Home : AppCompatActivity() {
 
@@ -77,14 +78,14 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val card = findViewById(R.id.card) as ImageView
-        card.setOnClickListener {
+        val card1 = findViewById(R.id.Lin_1) as LinearLayout
+        card1.setOnClickListener {
             val intent = Intent(this, discover_beauty::class.java)
             startActivity(intent)
         }
 
-        val card1 = findViewById(R.id.image2) as ImageView
-        card1.setOnClickListener {
+        val card2 = findViewById(R.id.Lin_2) as LinearLayout
+        card2.setOnClickListener {
             val intent = Intent(this, discover_beauty::class.java)
             startActivity(intent)
         }
@@ -95,10 +96,10 @@ class Home : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        val nearby = findViewById(R.id.imageView20) as ImageView
-        nearby.setOnClickListener {
-            val intent = Intent(this, nearby_more::class.java)
-            startActivity(intent)
+        near1.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/0KYl8Mw")
+            startActivity(openURL)
         }
 
         val bluespot = findViewById(R.id.image1) as ImageView

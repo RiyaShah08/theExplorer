@@ -463,6 +463,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView34">
 
                     <LinearLayout
+                        android:id="@+id/Lin_1"
                         android:layout_width="288dp"
                         android:layout_height="match_parent"
                         android:layout_marginStart="1dp"
@@ -837,7 +838,7 @@
 
 
                             <ImageView
-                                android:id="@+id/imageView20"
+                                android:id="@+id/near1"
                                 android:layout_width="303dp"
                                 android:layout_height="230dp"
                                 android:layout_marginTop="45dp"
@@ -856,7 +857,7 @@
                                 android:textColor="@color/white"
                                 android:textSize="27dp"
                                 app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/imageView20"
+                                app:layout_constraintTop_toBottomOf="@+id/near1"
                                 app:layout_constraintTop_toTopOf="parent" />
 
                             <TextView
@@ -1442,6 +1443,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView54">
 
                     <LinearLayout
+                        android:id="@+id/Lin_2"
                         android:layout_width="288dp"
                         android:layout_height="288dp"
                         android:layout_marginStart="1dp"
@@ -1976,10 +1978,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/plus"
             android:backgroundTint="@color/txtcolor"
+            android:src="@drawable/plus"
             android:tint="#ffffff"
-            android:foregroundTint="@color/screenbg"
             app:rippleColor="@color/screenbg"
             app:layout_anchor="@id/bottomAppBar"
             android:layout_marginBottom="25dp"

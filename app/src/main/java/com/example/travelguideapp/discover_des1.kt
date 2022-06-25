@@ -26,16 +26,9 @@ class discover_des1 : AppCompatActivity() {
 
         val image_dis = findViewById(R.id.bs4) as CardView
         image_dis.setOnClickListener {
-//            val gmmIntentUri = Uri.parse("geo:40.4319,116.5704?q=" + Uri.encode("nothing"))
-//            val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
-//            mapIntent.setPackage("com.google.android.gms.maps.SupportMapFragment")
-//            startActivity(mapIntent)
-
-            val intent = Intent(
-                Intent.ACTION_VIEW,
-                Uri.parse("geo:40.4319,116.5704"),
-            )
-            startActivity(intent)
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://cutt.ly/VKYj7Xr")
+           startActivity(openURL)
         }
 
 

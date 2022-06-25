@@ -12,27 +12,9 @@ class bluespot_main : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bluespot_main)
 
-        val materialCardView = findViewById(R.id.materialCardView) as MaterialCardView
-        materialCardView.setOnClickListener {
-            val intent = Intent(this, bluespot_desc::class.java)
-            startActivity(intent)
-        }
-
         val materialCardView1 = findViewById(R.id.materialCardView1) as MaterialCardView
         materialCardView1.setOnClickListener {
             val intent = Intent(this, bluespot_desc1::class.java)
-            startActivity(intent)
-        }
-
-        val materialCardView13 = findViewById(R.id.materialCardView13) as MaterialCardView
-        materialCardView13.setOnClickListener {
-            val intent = Intent(this, bluespot_desc3::class.java)
-            startActivity(intent)
-        }
-
-        val materialCardView5 = findViewById(R.id.materialCardView5) as MaterialCardView
-        materialCardView5.setOnClickListener {
-            val intent = Intent(this, bluesplot_desc4::class.java)
             startActivity(intent)
         }
 

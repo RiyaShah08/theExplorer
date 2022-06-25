@@ -175,40 +175,39 @@ public class googlemap extends FragmentActivity implements OnMapReadyCallback, G
                     }
                 }
                 break;
-            case R.id.B_hopistals:
-                mMap.clear();
-                String hospital = "hospital";
-                String url = getUrl(latitude, longitude, hospital);
-                dataTransfer[0] = mMap;
-                dataTransfer[1] = url;
-
-                getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(googlemap.this, "Showing Nearby Hospitals", Toast.LENGTH_SHORT).show();
-                break;
-
-
-            case R.id.B_schools:
-                mMap.clear();
-                String school = "school";
-                url = getUrl(latitude, longitude, school);
-                dataTransfer[0] = mMap;
-                dataTransfer[1] = url;
-
-                getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(googlemap.this, "Showing Nearby Schools", Toast.LENGTH_SHORT).show();
-                break;
-
-            case R.id.B_restaurants:
-                mMap.clear();
-                String resturant = "restuarant";
-                url = getUrl(latitude, longitude, resturant);
-                dataTransfer[0] = mMap;
-                dataTransfer[1] = url;
-
-                getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(googlemap.this, "Showing Nearby Restaurants", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.B_to:
+//            case R.id.B_hopistals:
+//                mMap.clear();
+//                String hospital = "hospital";
+//                String url = getUrl(latitude, longitude, hospital);
+//                dataTransfer[0] = mMap;
+//                dataTransfer[1] = url;
+//                getNearbyPlacesData.execute(dataTransfer);
+//                Toast.makeText(googlemap.this, "Showing Nearby Hospitals", Toast.LENGTH_SHORT).show();
+//                break;
+//
+//
+//            case R.id.B_schools:
+//                mMap.clear();
+//                String school = "school";
+//                url = getUrl(latitude, longitude, school);
+//                dataTransfer[0] = mMap;
+//                dataTransfer[1] = url;
+//
+//                getNearbyPlacesData.execute(dataTransfer);
+//                Toast.makeText(googlemap.this, "Showing Nearby Schools", Toast.LENGTH_SHORT).show();
+//                break;
+//
+//            case R.id.B_restaurants:
+//                mMap.clear();
+//                String resturant = "restuarant";
+//                url = getUrl(latitude, longitude, resturant);
+//                dataTransfer[0] = mMap;
+//                dataTransfer[1] = url;
+//
+//                getNearbyPlacesData.execute(dataTransfer);
+//                Toast.makeText(googlemap.this, "Showing Nearby Restaurants", Toast.LENGTH_SHORT).show();
+//                break;
+//            case R.id.B_to:
         }
     }
 
