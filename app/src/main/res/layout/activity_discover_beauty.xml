@@ -410,7 +410,7 @@
                                 android:layout_marginStart="22dp"
                                 android:layout_marginTop="200dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Zanskar river"
+                                android:text="Tiger Hills"
                                 android:textColor="@color/white"
                                 android:textSize="21dp"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -2860,6 +2860,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db43"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_1"
@@ -2909,6 +2910,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db44"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_2"
@@ -2958,6 +2960,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db45"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_3"
@@ -3007,6 +3010,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db46"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_4"
@@ -3056,6 +3060,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db47"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_5"
@@ -3105,6 +3110,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db48"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_6"
@@ -3154,6 +3160,7 @@
                             app:layout_constraintTop_toTopOf="parent">
 
                             <ImageView
+                                android:id="@+id/db49"
                                 android:layout_width="240dp"
                                 android:layout_height="240dp"
                                 android:src="@drawable/db1_l7_7"
