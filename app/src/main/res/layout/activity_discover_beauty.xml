@@ -422,6 +422,374 @@
                 </HorizontalScrollView>
 
             </LinearLayout>
+
+
+            #New Explore
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="1dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="New Explore"
+                android:textColor="@color/txtcolor"
+                android:textSize="21dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView6" />
+
+            #second layer
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView7"
+                android:layout_width="309.2dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView54">
+
+                <LinearLayout
+                    android:id="@+id/Lin_2"
+                    android:layout_width="288dp"
+                    android:layout_height="288dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="26dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    #image1
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/db50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="200dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Shivling Waterfall"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="GOA"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge1"
+                            app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+                        <ImageView
+                            android:id="@+id/imge1"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt1" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    #image2
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/db51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="200dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Dudhsagar Falls"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge2"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Mandavi"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge2"
+                            app:layout_constraintTop_toBottomOf="@+id/txt2" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    #image3
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/db52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="200dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Larnach Castle"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge3"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="New Zealand"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge3"
+                            app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    #image4
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/db53"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="200dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Mcleodganj"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge4"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Himachal Pradesh"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge4"
+                            app:layout_constraintTop_toBottomOf="@+id/txt4" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    #image5
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/db54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="200dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Udaipur"
+                            android:textColor="@color/white"
+                            android:textSize="17dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge5"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="Rajasthan"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge5"
+                            app:layout_constraintTop_toBottomOf="@+id/txt5" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    #image6
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="288dp"
+                        android:layout_height="288dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/db55"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/nw6"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="200dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Darjeeling"
+                            android:textColor="@color/white"
+                            android:textSize="21dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/imge6"
+                            android:layout_width="16dp"
+                            android:layout_height="18dp"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="9dp"
+                            android:src="@drawable/location"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="9dp"
+                            android:fontFamily="@font/roboto_rgl"
+                            android:text="West Bengal"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="@+id/imge6"
+                            app:layout_constraintTop_toBottomOf="@+id/txt6" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
             #layer1
             <LinearLayout
                 android:layout_width="match_parent"

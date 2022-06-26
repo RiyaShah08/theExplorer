@@ -351,6 +351,44 @@ class discover_beauty : AppCompatActivity() {
             startActivity(openURL)
         }
 
+        //____________________________________________**____________________________________________
+        db50.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/7tAqWi9KQTtAVSWSA")
+            startActivity(openURL)
+        }
+
+        db51.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/hkHhhnCFqScmuSHs6")
+            startActivity(openURL)
+        }
+
+        db52.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/A4SQxp3Xvvf9UpkG9")
+            startActivity(openURL)
+        }
+
+        db53.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/sVDwvRUDhKXu5YUZ8")
+            startActivity(openURL)
+        }
+
+        db54.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/MhBUdhPsqR9GCUew7")
+            startActivity(openURL)
+        }
+
+        db55.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse("https://goo.gl/maps/WNdr9hLd8b6ykhe39")
+            startActivity(openURL)
+        }
+
+
         val back_dc = findViewById(R.id.back_dc) as ImageView
         back_dc.setOnClickListener {
             val intent = Intent(this, Home::class.java)

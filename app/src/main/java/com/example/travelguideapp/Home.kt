@@ -104,7 +104,7 @@ class Home : AppCompatActivity() {
 
         near2.setOnClickListener {
             val openURL = Intent(android.content.Intent.ACTION_VIEW)
-            openURL.data = Uri.parse("https://cutt.ly/fKYk648")
+            openURL.data = Uri.parse("https://cutt.ly/gKIrvtA")
             startActivity(openURL)
         }
 
