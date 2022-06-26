@@ -1976,21 +1976,38 @@
 
         </com.google.android.material.bottomappbar.BottomAppBar>
 
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/app_name"
-            android:backgroundTint="@color/txtcolor"
-            android:src="@drawable/plus"
-            android:tint="#ffffff"
-            app:rippleColor="@color/screenbg"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/black"
+
             app:layout_anchor="@id/bottomAppBar"
             android:layout_marginBottom="25dp"
             app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
+            app:srcCompat="@drawable/pluss"/>
+
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/fab"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:contentDescription="@string/app_name"-->
+<!--            android:backgroundTint="@color/txtcolor"-->
+<!--            android:src="@drawable/plus"-->
+<!--            -->
+<!--            android:tint="#ffffff"-->
+<!--            app:rippleColor="@color/screenbg"-->
+<!--            app:layout_anchor="@id/bottomAppBar"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:ignore="MissingConstraints" />-->
 
 <!--    <ImageView-->
 <!--        android:layout_width="60dp"-->

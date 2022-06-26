@@ -49,6 +49,8 @@ class recycle_blue : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
 //        raw_image.setOnClickListener {
 //            Intent(Intent.ACTION_GET_CONTENT).also {
 //                it.type = "users/user1/*"
@@ -69,7 +71,7 @@ class recycle_blue : AppCompatActivity() {
                         useArrayList.add(user!!)
                     }
 
-                    useRecyclerView.adapter = MyAdapter(useArrayList)
+                    useRecyclerView.adapter = MyAdapter(useArrayList,this@recycle_blue)
                 }
             }
 
@@ -77,6 +79,13 @@ class recycle_blue : AppCompatActivity() {
 
             }
         })
+    }
+
+    fun setClick() {
+        println("clicked")
+        val openURL = Intent(android.content.Intent.ACTION_VIEW)
+        openURL.data = Uri.parse( "https://goo.gl/maps/wJcQUTjKe5PAdMLw6")
+        startActivity(openURL)
     }
 }
 

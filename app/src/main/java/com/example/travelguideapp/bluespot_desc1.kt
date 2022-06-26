@@ -1,6 +1,7 @@
 package com.example.travelguideapp
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.CheckBox
@@ -8,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
+import kotlinx.android.synthetic.main.activity_bluespot_desc1.*
 
 class bluespot_desc1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,16 +27,17 @@ class bluespot_desc1 : AppCompatActivity() {
             }
         }
 
+
         val txt2 = findViewById(R.id.back2) as ImageView
         txt2.setOnClickListener {
             val intent = Intent(this, recycle_blue::class.java)
             startActivity(intent)
         }
 
-        val blue1 = findViewById(R.id.bs2) as CardView
-        blue1.setOnClickListener {
-            val intent = Intent(this, googlemap::class.java)
-            startActivity(intent)
+        bs2.setOnClickListener {
+            val openURL = Intent(android.content.Intent.ACTION_VIEW)
+            openURL.data = Uri.parse( "https://cutt.ly/fKYT2QB")
+            startActivity(openURL)
         }
     }
 
