@@ -84,7 +84,7 @@ class recycle_blue : AppCompatActivity() {
     fun setClick() {
         println("clicked")
         val openURL = Intent(android.content.Intent.ACTION_VIEW)
-        openURL.data = Uri.parse( "https://goo.gl/maps/wJcQUTjKe5PAdMLw6")
+        openURL.data = Uri.parse( "https://goo.gl/maps/ikFR7cJJpsGKoV9g8")
         startActivity(openURL)
     }
 }
